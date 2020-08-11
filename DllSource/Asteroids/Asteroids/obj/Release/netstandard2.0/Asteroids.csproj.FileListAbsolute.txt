@@ -1,0 +1,8 @@
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\bin\Release\netstandard2.0\Asteroids.deps.json
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\bin\Release\netstandard2.0\Asteroids.dll
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\bin\Release\netstandard2.0\Asteroids.pdb
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\obj\Release\netstandard2.0\Asteroids.csprojAssemblyReference.cache
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\obj\Release\netstandard2.0\Asteroids.AssemblyInfoInputs.cache
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\obj\Release\netstandard2.0\Asteroids.AssemblyInfo.cs
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\obj\Release\netstandard2.0\Asteroids.dll
+D:\Source\Asteroids\DllSource\Asteroids\Asteroids\obj\Release\netstandard2.0\Asteroids.pdb

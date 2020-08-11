@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\urok7\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\urok7\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Asteroids.1036863948.00" t="ExcludeRecursive" />
+    <e p="D:\Source\Asteroids\DllSource\Asteroids" t="IncludeFlat">
+      <e p="Asteroids" t="IncludeRecursive">
+        <e p="Adapter" t="Include">
+          <e p="LimitedResourceAmmoAdapter.cs" t="Include" />
+          <e p="ProgressIndicatorAutoAddAmmoAdapter.cs" t="Include" />
+        </e>
+        <e p="Asteroids.csproj" t="IncludeRecursive" />
+        <e p="Base" t="Include">
+          <e p="Component.cs" t="Include" />
+          <e p="ComponentsStorage.cs" t="Include" />
+          <e p="IComponentsStorage.cs" t="Include" />
+          <e p="IDestroyable.cs" t="Include" />
+          <e p="IMovable.cs" t="Include" />
+          <e p="IRotatable.cs" t="Include" />
+          <e p="IScalable.cs" t="Include" />
+          <e p="Transform.cs" t="Include" />
+          <e p="Vector3.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Builder" t="Include">
+          <e p="GameObjectBuilder.cs" t="Include" />
+          <e p="GameObjectDirector.cs" t="Include" />
+        </e>
+        <e p="Collision" t="Include">
+          <e p="Collider.cs" t="Include" />
+          <e p="ColliderTag.cs" t="Include" />
+          <e p="CollisionChecker.cs" t="Include" />
+          <e p="ICollision.cs" t="Include" />
+          <e p="ICollisionChecker.cs" t="Include" />
+          <e p="SimpleCollision.cs" t="Include" />
+          <e p="SphereCollider.cs" t="Include" />
+        </e>
+        <e p="Move" t="Include">
+          <e p="IAccelerationController.cs" t="Include" />
+          <e p="IAngularVelocityMover.cs" t="Include" />
+          <e p="IDirectionMover.cs" t="Include" />
+          <e p="IVelocityMover.cs" t="Include" />
+          <e p="MotionContrioller.cs" t="Include" />
+          <e p="Mover.cs" t="Include" />
+          <e p="RotationController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="Asteroids.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Other" t="Include">
+          <e p="Bounce" t="Include">
+            <e p="BouncingComponent.cs" t="Include" />
+            <e p="IBounce.cs" t="Include" />
+          </e>
+          <e p="Pursuer" t="Include">
+            <e p="IPursuer.cs" t="Include" />
+            <e p="Pursuer.cs" t="Include" />
+            <e p="PursuerAimer.cs" t="Include" />
+            <e p="SimplePursuerMoveStrategy.cs" t="Include" />
+          </e>
+          <e p="Rectangle" t="Include">
+            <e p="BouncingInRectangle.cs" t="Include" />
+            <e p="IRectangle.cs" t="Include" />
+            <e p="IScalableRectangle.cs" t="Include" />
+            <e p="MoveInRectangle.cs" t="Include" />
+            <e p="Rectangle.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Updater" t="Include">
+          <e p="IUpdatable.cs" t="Include" />
+          <e p="IUpdaterObservable.cs" t="Include" />
+          <e p="IUpdaterObserver.cs" t="Include" />
+          <e p="UpdaterObserver.cs" t="Include" />
+        </e>
+        <e p="View" t="Include">
+          <e p="ComponentView.cs" t="Include" />
+          <e p="ILimitedResource.cs" t="Include" />
+          <e p="IProgressIndicator.cs" t="Include" />
+          <e p="IViewFactory.cs" t="Include" />
+          <e p="LimitedResourceView.cs" t="Include" />
+          <e p="ProgressIndicatorView.cs" t="Include" />
+        </e>
+        <e p="Weapon" t="Include">
+          <e p="AutoAddLimitedAmmoWeapon.cs" t="Include" />
+          <e p="IAutoAddAmmo.cs" t="Include" />
+          <e p="ILimitedAmmo.cs" t="Include" />
+          <e p="IReloadProgressWeapon.cs" t="Include" />
+          <e p="IShootable.cs" t="Include" />
+          <e p="LimitedLifetime.cs" t="Include" />
+          <e p="Weapon.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Asteroids.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

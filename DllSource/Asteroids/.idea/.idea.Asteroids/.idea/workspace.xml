@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e98157a-1747-41f3-8655-9efc47018fb5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/IMovable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/IRotatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/Transform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/View/LimitedResourceView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/View/ProgressIndicatorView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/IComponentsStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/ComponentsStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Updater/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Updater/IUpdaterObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Updater/UpdaterObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Updater/IUpdaterObservable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Adapter/LimitedResourceAmmoAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Adapter/ProgressIndicatorAutoAddAmmoAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/IDirectionMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/IAngularVelocityMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/View/ILimitedResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/IVelocityMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/View/IProgressIndicator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/Mover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/MoveInRectangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/RotationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/BouncingInRectangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/IAccelerationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/IScalable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Move/MotionContrioller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/ICollisionChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/SimpleCollision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/SphereCollider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/Collider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/ColliderTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/ICollision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/View/IViewFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/View/ComponentView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Base/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/IScalableRectangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/Rectangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/IRectangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/IAutoAddAmmo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/ILimitedAmmo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Bounce/BouncingComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/AutoAddLimitedAmmoWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Bounce/IBounce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/IReloadProgressWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/IShootable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Builder/GameObjectDirector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Builder/GameObjectBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Pursuer/SimplePursuerMoveStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Pursuer/PursuerAimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Pursuer/Pursuer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/Pursuer/IPursuer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Weapon/LimitedLifetime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Collision/CollisionChecker.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Asteroids/Base/IComponentsStorage.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/ComponentsStorage.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/IShootable.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/IReloadWeapon.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/IReloadProgressWeapon.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/AutoReloadableWeapon.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/ILimitedAmmo.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/AutoAddLimitedAmmoWeapon.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/IAutoAddAmmo.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/ColliderTag.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/ICollisionChecker.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/ICollision.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/SimpleCollision.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Pursuer/IPursuer.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Pursuer/Pursuer.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Split/ISplittable.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Split/SplittableComponent.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Bounce/IBounce.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Bounce/BouncingComponent.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/IResizeRectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/IResizableRectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/IResizable.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/IScalable.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/Transform.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Updater/IUpdatable.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/Vector3.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/IRectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/IScalableRectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/Rectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Builder/GameObjectBuilder.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/View/IProgressIndicator.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/View/ILimitedResource.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Adapter/ProgressIndicatorAutoAddAmmoAdapter.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Adapter/LimitedResourceAmmoAdapter.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Builder/GameObjectDirector.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/View/ProgressIndicatorView.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/LimitedLifetime.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/CollisionChecker.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Move/Mover.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/MoveInRectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Move/MotionContrioller.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Move/RotationController.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Pursuer/SimplePursuerMoveStrategy.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Pursuer/PursuerAimer.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/BouncingInRectangle.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Weapon/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/View/LimitedResourceView.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/View/ComponentView.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/View/IViewFactory.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/Collider.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Collision/SphereCollider.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fimeR6kYovQQanoyuRvI1ba2wr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="ReSharper" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="543" y="239" width="642" height="538" key="#Notifications" timestamp="1596723065806">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="543" y="239" width="642" height="538" key="#Notifications/0.0.1600.860@0.0.1600.860" timestamp="1596723065806" />
+    <state x="878" y="150" key="RiderGenerateDialog" timestamp="1596896454157">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="878" y="150" key="RiderGenerateDialog/0.0.1600.860@0.0.1600.860" timestamp="1596896454157" />
+    <state x="301" y="137" key="SettingsEditor" timestamp="1596715796153">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="137" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1596715796153" />
+    <state x="698" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596792540497">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="698" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860@0.0.1600.860" timestamp="1596792540497" />
+    <state x="478" y="29" width="644" height="801" key="find.popup" timestamp="1596896080647">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="478" y="29" width="644" height="801" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1596896080647" />
+    <state x="708" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1596895713315">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="708" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1596895713315" />
+  </component>
+</project>
