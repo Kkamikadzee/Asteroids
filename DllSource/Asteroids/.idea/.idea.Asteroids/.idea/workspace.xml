@@ -32,9 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/IMovable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/IRotatable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/Transform.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroids/View/LimitedResourceView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroids/View/ProgressIndicatorView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/IComponentsStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/ComponentsStorage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,9 +44,9 @@
     <setting file="file://$PROJECT_DIR$/Asteroids/Adapter/ProgressIndicatorAutoAddAmmoAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Move/IDirectionMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Move/IAngularVelocityMover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroids/View/ILimitedResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/ILimitedResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Move/IVelocityMover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroids/View/IProgressIndicator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroids/Other/IProgressIndicator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Move/Mover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/MoveInRectangle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Move/RotationController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,8 +60,6 @@
     <setting file="file://$PROJECT_DIR$/Asteroids/Collision/Collider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Collision/ColliderTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Collision/ICollision.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroids/View/IViewFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroids/View/ComponentView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Base/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/IScalableRectangle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroids/Other/Rectangle/Rectangle.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Asteroids/Base/IComponentsStorage.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Base/ComponentsStorage.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Weapon/IShootable.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Weapon/IReloadWeapon.cs" />
@@ -139,6 +134,7 @@
         <option value="$PROJECT_DIR$/Asteroids/View/IViewFactory.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Collision/Collider.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Collision/SphereCollider.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Other/ILimitedResource.cs" />
       </list>
     </option>
   </component>

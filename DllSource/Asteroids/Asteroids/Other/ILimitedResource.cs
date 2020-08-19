@@ -1,4 +1,4 @@
-﻿namespace KMK.Models.View
+﻿namespace KMK.Models.Other
 {
     public interface ILimitedResource
     {

@@ -1,4 +1,4 @@
-﻿using KMK.Models.View;
+﻿using KMK.Models.Other;
 using KMK.Models.Weapon;
 
 namespace KMK.Models.Adapter

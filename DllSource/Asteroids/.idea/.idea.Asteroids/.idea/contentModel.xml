@@ -56,6 +56,8 @@
             <e p="BouncingComponent.cs" t="Include" />
             <e p="IBounce.cs" t="Include" />
           </e>
+          <e p="ILimitedResource.cs" t="Include" />
+          <e p="IProgressIndicator.cs" t="Include" />
           <e p="Pursuer" t="Include">
             <e p="IPursuer.cs" t="Include" />
             <e p="Pursuer.cs" t="Include" />
@@ -76,14 +78,7 @@
           <e p="IUpdaterObserver.cs" t="Include" />
           <e p="UpdaterObserver.cs" t="Include" />
         </e>
-        <e p="View" t="Include">
-          <e p="ComponentView.cs" t="Include" />
-          <e p="ILimitedResource.cs" t="Include" />
-          <e p="IProgressIndicator.cs" t="Include" />
-          <e p="IViewFactory.cs" t="Include" />
-          <e p="LimitedResourceView.cs" t="Include" />
-          <e p="ProgressIndicatorView.cs" t="Include" />
-        </e>
+        <e p="View" t="Include" />
         <e p="Weapon" t="Include">
           <e p="AutoAddLimitedAmmoWeapon.cs" t="Include" />
           <e p="IAutoAddAmmo.cs" t="Include" />
