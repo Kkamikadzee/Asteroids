@@ -112,7 +112,6 @@
         <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/IRectangle.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/IScalableRectangle.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Other/Rectangle/Rectangle.cs" />
-        <option value="$PROJECT_DIR$/Asteroids/Builder/GameObjectBuilder.cs" />
         <option value="$PROJECT_DIR$/Asteroids/View/IProgressIndicator.cs" />
         <option value="$PROJECT_DIR$/Asteroids/View/ILimitedResource.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Adapter/ProgressIndicatorAutoAddAmmoAdapter.cs" />
@@ -135,6 +134,7 @@
         <option value="$PROJECT_DIR$/Asteroids/Collision/Collider.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Collision/SphereCollider.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Other/ILimitedResource.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Builder/GameObjectBuilder.cs" />
       </list>
     </option>
   </component>
