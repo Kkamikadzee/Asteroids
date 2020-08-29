@@ -8,7 +8,8 @@ namespace KMK.Models.Base
     {
         private List<Component> _components;
         private Transform _transform;
-
+        
+        public event Action<IComponentsStorage> Destruction;
         public Transform Transform => _transform;
 
         public ComponentsStorage()

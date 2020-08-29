@@ -9,6 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="GameManager.cs" t="Include" />
           <e p="InputModel.cs" t="Include" />
+          <e p="InstantiateModel" t="Include">
+            <e p="ModelBuilder.cs" t="Include" />
+          </e>
           <e p="SystemInput.cs" t="Include" />
           <e p="Trash" t="Include">
             <e p="CannonBulletView.cs" t="Include" />
@@ -30,6 +33,10 @@
             <e p="PlayerViewUI.cs" t="Include" />
             <e p="ScoringSystem.cs" t="Include" />
             <e p="SpawnEnemySystem.cs" t="Include" />
+          </e>
+          <e p="Update" t="Include">
+            <e p="Updater.cs" t="Include" />
+            <e p="UpdaterObservable.cs" t="Include" />
           </e>
         </e>
       </e>

@@ -84,9 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Asteroids/Base/ComponentsStorage.cs" />
-        <option value="$PROJECT_DIR$/Asteroids/Weapon/IShootable.cs" />
-        <option value="$PROJECT_DIR$/Asteroids/Weapon/IReloadWeapon.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Weapon/IReloadProgressWeapon.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Weapon/AutoReloadableWeapon.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Weapon/ILimitedAmmo.cs" />
@@ -135,6 +132,9 @@
         <option value="$PROJECT_DIR$/Asteroids/Collision/SphereCollider.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Other/ILimitedResource.cs" />
         <option value="$PROJECT_DIR$/Asteroids/Builder/GameObjectBuilder.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/Component.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/IComponentsStorage.cs" />
+        <option value="$PROJECT_DIR$/Asteroids/Base/ComponentsStorage.cs" />
       </list>
     </option>
   </component>
