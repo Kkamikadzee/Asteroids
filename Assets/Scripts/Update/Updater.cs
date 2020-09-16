@@ -1,29 +1,48 @@
 ﻿using UnityEngine;
+using KMK.Model.Updater;
 
 namespace Update
 {
-    public class Updater : MonoBehaviour
+    public class Updater: MonoBehaviour, IUpdater
     {
         private UpdaterObservable _movementObservable;
         private UpdaterObservable _collisionObservable;
-        private UpdaterObservable _otherObservable;
+        private UpdaterObservable _otherFixedUpdateObservable;
+        private UpdaterObservable _viewObservable;
+        private UpdaterObservable _otherUpdateObservable;
+
+        private bool _active;
         
-        private UpdaterObservable MovementObservable => _movementObservable;
-        private UpdaterObservable CollisionObservable => _collisionObservable;
-        private UpdaterObservable OtherObservable => _otherObservable;
+        public UpdaterObservable MovementObservable => _movementObservable;
+        public UpdaterObservable CollisionObservable => _collisionObservable;
+        public UpdaterObservable OtherFixedUpdateObservable => _otherFixedUpdateObservable;
+        public UpdaterObservable ViewObservable => _viewObservable;
+        public UpdaterObservable OtherUpdateObservable => _otherUpdateObservable;
+
+        public bool Active => _active;
 
         public Updater()
         {
-            _movementObservable = new UpdaterObservable(); //TODO: Использовать для этого фабрику и место объектов класса - интерфейсы
+            _movementObservable = new UpdaterObservable();
             _collisionObservable = new UpdaterObservable();
-            _otherObservable = new UpdaterObservable();
+            _otherFixedUpdateObservable = new UpdaterObservable();
+            _viewObservable = new UpdaterObservable();
+            _otherUpdateObservable = new UpdaterObservable();
+
+            _active = false;
         }
 
         private void FixedUpdate()
         {
             _collisionObservable.NotifyObservers(Time.fixedTime);
             _movementObservable.NotifyObservers(Time.fixedTime);
-            _otherObservable.NotifyObservers(Time.fixedTime);
+            _otherFixedUpdateObservable.NotifyObservers(Time.fixedTime);
+        }
+        
+        private void Update()
+        {
+            _viewObservable.NotifyObservers(Time.fixedTime);
+            _otherUpdateObservable.NotifyObservers(Time.fixedTime);
         }
     }
 }

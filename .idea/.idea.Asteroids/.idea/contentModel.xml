@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\urok7\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\urok7\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Asteroids.-1653479059.00" t="ExcludeRecursive" />
-    <e p="D:\Source\Asteroids" t="IncludeRecursive">
+    <e p="C:\Users\Kkami\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Kkami\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_Asteroids.760960463.00" t="ExcludeRecursive" />
+    <e p="M:\Source\Unity\Asteroids" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Controller" t="Include">
+            <e p="Game" t="Include">
+              <e p="AsteroidsPlayerTransform.cs" t="Include" />
+              <e p="HealthDieController.cs" t="Include" />
+              <e p="HealthScoreController.cs" t="Include" />
+            </e>
+            <e p="GameObjectController" t="Include">
+              <e p="AsteroidsControllers.cs" t="Include" />
+              <e p="GameObjectController.cs" t="Include" />
+              <e p="GameObjectControllerStorage.cs" t="Include" />
+              <e p="UpdateViewStrategy" t="Include">
+                <e p="IUpdateViewStrategy.cs" t="Include" />
+                <e p="UpdateViewStrategyMutable.cs" t="Include" />
+                <e p="UpdateViewStrategyTransform.cs" t="Include" />
+              </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="AsteroidsUiControllersStorage.cs" t="Include" />
+              <e p="Factory" t="Include">
+                <e p="IAsteroidsUiViewFactory.cs" t="Include" />
+                <e p="SimpleAsteroidsUiViewFactory.cs" t="Include" />
+              </e>
+              <e p="IAsteroidsUiControllersStoragePlayerInfo.cs" t="Include" />
+              <e p="IUiViewController.cs" t="Include" />
+              <e p="LimitedResourceController.cs" t="Include" />
+              <e p="LimitedResourceLimitedFromAboveController.cs" t="Include" />
+              <e p="ProgressIndicatorController.cs" t="Include" />
+              <e p="ScorerController.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Convert" t="Include">
+            <e p="Converter.cs" t="Include" />
+            <e p="KmkVector3Extension.cs" t="Include" />
+            <e p="UnityVector3Extension.cs" t="Include" />
+          </e>
           <e p="GameManager.cs" t="Include" />
           <e p="InputModel.cs" t="Include" />
-          <e p="InstantiateModel" t="Include">
-            <e p="ModelBuilder.cs" t="Include" />
+          <e p="Model" t="Include">
+            <e p="ComponentsStorageBuilder" t="Include">
+              <e p="AsteroidComponentsStorageBuilder.cs" t="Include" />
+              <e p="BulletComponentsStorageBuilder.cs" t="Include" />
+              <e p="PlayerComponentsStorageBuilder.cs" t="Include" />
+              <e p="UfoComponentsStorageBuilder.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include">
+              <e p="AsteroidData.cs" t="Include" />
+              <e p="AsteroidsDataStorage.cs" t="Include" />
+              <e p="BulletData.cs" t="Include" />
+              <e p="PlayerData.cs" t="Include" />
+              <e p="UfoData.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Spawner" t="Include">
+            <e p="ChildrenSpawner" t="Include">
+              <e p="IChildrenSpawnerHelper.cs" t="Include" />
+            </e>
+            <e p="IAsteroidsSpawner.cs" t="Include" />
           </e>
           <e p="SystemInput.cs" t="Include" />
           <e p="Trash" t="Include">
@@ -35,8 +88,61 @@
             <e p="SpawnEnemySystem.cs" t="Include" />
           </e>
           <e p="Update" t="Include">
+            <e p="IUpdater.cs" t="Include" />
+            <e p="UpdateObserverCreator.cs" t="Include" />
             <e p="Updater.cs" t="Include" />
-            <e p="UpdaterObservable.cs" t="Include" />
+          </e>
+          <e p="View" t="Include">
+            <e p="GameObjectView" t="Include">
+              <e p="Creator" t="Include">
+                <e p="GameObjectViewCreator.cs" t="Include" />
+                <e p="Polygon" t="Include">
+                  <e p="PolygonTransformGameObjectViewCreator.cs" t="Include" />
+                </e>
+                <e p="Sprite" t="Include">
+                  <e p="SpriteTransformGameObjectViewCreator.cs" t="Include" />
+                  <e p="SpriteTransformMutableGameObjectViewCreator.cs" t="Include" />
+                </e>
+              </e>
+              <e p="CreatorFactory" t="Include">
+                <e p="IGameObjectVeiwCreatorFactory.cs" t="Include" />
+                <e p="Polygon" t="Include">
+                  <e p="PolygonGameObjectViewCreatorFactory.cs" t="Include" />
+                </e>
+                <e p="Sprite" t="Include">
+                  <e p="SpriteGameObjectViewCreatorFactory.cs" t="Include" />
+                </e>
+              </e>
+              <e p="GameObjectView.cs" t="Include" />
+              <e p="IMutableView.cs" t="Include" />
+              <e p="ITransformView.cs" t="Include" />
+              <e p="PolygonView" t="Include">
+                <e p="PolygonTransformView.cs" t="Include" />
+              </e>
+              <e p="SpriteView" t="Include">
+                <e p="SpriteTransformMutableView.cs" t="Include" />
+                <e p="SpriteTransformView.cs" t="Include" />
+              </e>
+              <e p="TransformMutableView.cs" t="Include" />
+              <e p="TransformView.cs" t="Include" />
+              <e p="ViewState.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="ImageUi" t="Include">
+                <e p="ImageLimitedResourceLimitedFromAboveView.cs" t="Include" />
+                <e p="ImageLimitedResourceView.cs" t="Include" />
+                <e p="ImageProgressIndicatorView.cs" t="Include" />
+              </e>
+              <e p="LimitedResourceLimitedFromAboveView.cs" t="Include" />
+              <e p="LimitedResourceView.cs" t="Include" />
+              <e p="ProgressIndicatorView.cs" t="Include" />
+              <e p="ScorerView.cs" t="Include" />
+              <e p="TextUi" t="Include">
+                <e p="TextScorerView.cs" t="Include" />
+              </e>
+              <e p="UiElement.cs" t="Include" />
+              <e p="UnityAsteroidsUi.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

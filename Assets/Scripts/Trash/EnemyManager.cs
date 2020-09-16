@@ -33,7 +33,7 @@ public class EnemyManager
         EnemyController controller;
         EnemyModel model;
         EnemyView view;
-        int numPrefab = Convert.ToInt32(typeEnemy);
+        int numPrefab = System.Convert.ToInt32(typeEnemy);
         _enemySpawnManager.SpawnEnemy(_enemyDatas[numPrefab], _enemyPrefabs[numPrefab], _fieldBoundary, out controller, out model, out view);
         controller.Destroy += DestroyEnemy;
         _controllerModelPairs.Add(controller, model);
@@ -50,7 +50,7 @@ public class EnemyManager
             EnemyModel[] models;
             EnemyView[] views;
 
-            int numPrefab = Convert.ToInt32(model.Description.TypeEnemy);
+            int numPrefab = System.Convert.ToInt32(model.Description.TypeEnemy);
             int countChilds = 2;
             _enemySpawnManager.SpawnChildEnemy(model, _enemyPrefabs[numPrefab], countChilds, out controllers, out models, out views);
             if(controllers != null && models != null && views != null)

@@ -1,0 +1,9 @@
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\bin\Release\netstandard2.0\KMK.Model.deps.json
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\bin\Release\netstandard2.0\KMK.Model.dll
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\bin\Release\netstandard2.0\KMK.Model.pdb
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\obj\Release\netstandard2.0\KMK.Model.csprojAssemblyReference.cache
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\obj\Release\netstandard2.0\KMK.Model.csproj.CoreCompileInputs.cache
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\obj\Release\netstandard2.0\KMK.Model.AssemblyInfoInputs.cache
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\obj\Release\netstandard2.0\KMK.Model.AssemblyInfo.cs
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\obj\Release\netstandard2.0\KMK.Model.dll
+M:\Source\Unity\Asteroids\Other\ModelDll\KMK.Model\KMK.Model\obj\Release\netstandard2.0\KMK.Model.pdb

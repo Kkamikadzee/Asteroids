@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: 21300012
     second: LaserBullet
+  - first:
+      213: 5546671543968653177
+    second: Health
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -254,7 +257,7 @@ TextureImporter:
         width: 16
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,6 +265,27 @@ TextureImporter:
       bones: []
       spriteID: f174f6b64c6bdd24b989fb516d53e0cd
       internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fd408b16cb9fc40800000000000000
+      internalID: 5546671543968653177
       vertices: []
       indices: 
       edges: []
