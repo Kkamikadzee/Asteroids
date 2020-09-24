@@ -56,6 +56,13 @@
                 _scale = Vector3.One;
             }
         }
+
+        public Transform(Transform transform)
+        {
+            _position = transform._position;
+            _eulerAngles = transform._eulerAngles;
+            _scale = transform._scale;
+        }
         
         public void MoveTo(float x, float y, float z)
         {

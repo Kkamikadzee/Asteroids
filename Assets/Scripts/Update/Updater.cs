@@ -21,11 +21,13 @@ namespace Update
 
         public bool Active => _active;
 
+
         public Updater()
         {
             _movementObservable = new UpdaterObservable();
             _collisionObservable = new UpdaterObservable();
             _otherFixedUpdateObservable = new UpdaterObservable();
+            
             _viewObservable = new UpdaterObservable();
             _otherUpdateObservable = new UpdaterObservable();
 
@@ -34,15 +36,31 @@ namespace Update
 
         private void FixedUpdate()
         {
-            _collisionObservable.NotifyObservers(Time.fixedTime);
-            _movementObservable.NotifyObservers(Time.fixedTime);
-            _otherFixedUpdateObservable.NotifyObservers(Time.fixedTime);
+            if (_active)
+            {
+                _movementObservable.NotifyObservers(Time.fixedDeltaTime);
+                _otherFixedUpdateObservable.NotifyObservers(Time.fixedDeltaTime);
+            }
         }
         
         private void Update()
         {
-            _viewObservable.NotifyObservers(Time.fixedTime);
-            _otherUpdateObservable.NotifyObservers(Time.fixedTime);
+            if (_active)
+            {
+                _collisionObservable.NotifyObservers(Time.fixedDeltaTime);
+                _viewObservable.NotifyObservers(Time.deltaTime);
+                _otherUpdateObservable.NotifyObservers(Time.deltaTime);
+            }
+        }
+
+        public void Enable()
+        {
+            _active = true;
+        }
+
+        public void Disable()
+        {
+            _active = false;
         }
     }
 }

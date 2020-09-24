@@ -12,6 +12,8 @@ namespace View.UI.ImageUi
         
         private Transform _instantiateParent;
         
+        private float _paddingBetweenObjects = 32f;
+
         public override event Action DisconnectFromObserver;
         public override event Action Refresh;
         
@@ -27,7 +29,10 @@ namespace View.UI.ImageUi
 
             for (int i = 0; i < displayedMaxAmountResource; i++)
             {
-                _displayedResources[i] = Object.Instantiate(_resourcePrefab, _instantiateParent); //TODO: Смещать последующие объекты
+                _displayedResources[i] = Object.Instantiate(_resourcePrefab, _instantiateParent);
+                _displayedResources[i].transform.position = new Vector3(_displayedResources[i].transform.position.x + i * _paddingBetweenObjects,
+                    _displayedResources[i].transform.position.y, _displayedResources[i].transform.position.z);
+                _displayedResources[i].SetActive(false);
             }
 
             _changeDisplayedAmountResource(displayedAmountResource);
@@ -39,21 +44,21 @@ namespace View.UI.ImageUi
             {
                 while (_displayedAmountResource < amountResource)
                 {
-                    _displayedResources[_displayedAmountResource].SetActive(true);
+                    _displayedResources[(_displayedAmountResource++)].SetActive(true);
                 }
             }
             else
             {
-                while (_displayedAmountResource >= amountResource)
+                while (_displayedAmountResource > amountResource)
                 {
-                    _displayedResources[_displayedAmountResource--].SetActive(false);
+                    _displayedResources[(_displayedAmountResource-- - 1)].SetActive(false);
                 }
             }
         }
         
         public override void SetAmountResource(int amountResource)
         {
-            _changeDisplayedAmountResource(_displayedAmountResource);
+            _changeDisplayedAmountResource(amountResource);
         }
 
         public override void SetMaxAmountResource(int maxAmountResource)
@@ -74,7 +79,10 @@ namespace View.UI.ImageUi
             {
                 for (int i = _displayedAmountResource; i < maxAmountResource; i++)
                 {
-                    _displayedResources[i] = Object.Instantiate(_resourcePrefab, _instantiateParent); //TODO: Смещать последующие объекты
+                    _displayedResources[i] = Object.Instantiate(_resourcePrefab, _instantiateParent);
+                    _displayedResources[i].transform.position = new Vector3(_displayedResources[i].transform.position.x + i * _paddingBetweenObjects,
+                        _displayedResources[i].transform.position.y, _displayedResources[i].transform.position.z);
+                    _displayedResources[i].SetActive(false);
                 }
             }
             else

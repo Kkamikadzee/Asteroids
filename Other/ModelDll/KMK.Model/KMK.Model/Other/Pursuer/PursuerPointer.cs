@@ -27,7 +27,14 @@ namespace KMK.Model.Other.Pursuer
 
         public void Update(float deltaTime)
         {
-            _pursuer.SetPositionPursued(_pursued.Position);
+            if (_pursued != null)
+            {
+                _pursuer.SetPositionPursued(_pursued.Position);
+            }
+            else
+            {
+                _pursuer.SetPositionPursued(new Vector3(float.MaxValue, float.MaxValue, float.MaxValue));
+            }
         }
         
         public override void Destroy()

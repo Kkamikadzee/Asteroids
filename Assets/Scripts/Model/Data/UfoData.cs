@@ -1,4 +1,6 @@
-﻿using KMK.Model.Collision;
+﻿#pragma warning disable CS0649
+
+using KMK.Model.Collision;
 using UnityEngine;
 
 namespace Model.Data

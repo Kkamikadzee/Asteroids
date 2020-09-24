@@ -27,6 +27,12 @@ namespace Controller.UI
 
         public ProgressIndicatorController() { }
         
+        public ProgressIndicatorController(ProgressIndicatorView progressIndicatorView)
+        {
+            _progressIndicatorView = progressIndicatorView;
+            _progressIndicatorView.Refresh += UpdateView;
+        }
+        
         public ProgressIndicatorController(IProgressIndicator progressIndicator,
             ProgressIndicatorView progressIndicatorView)
         {
@@ -38,10 +44,14 @@ namespace Controller.UI
 
         public void UpdateView()
         {
-            if(_progressIndicatorView.DisplayedProgress != _progressIndicator.Progress)
+            if (_progressIndicator != null && _progressIndicatorView != null)
             {
-                _progressIndicatorView.SetProgress(_progressIndicator.Progress);
+                if(_progressIndicatorView.DisplayedProgress != _progressIndicator.Progress)
+                {
+                    _progressIndicatorView.SetProgress(_progressIndicator.Progress);
+                }
             }
+
         }
     }
 }

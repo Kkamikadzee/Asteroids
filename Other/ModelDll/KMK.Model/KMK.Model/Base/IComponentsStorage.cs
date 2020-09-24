@@ -6,7 +6,7 @@ namespace KMK.Model.Base
     public interface IComponentsStorage : IDestroyable
     {
         event Action<IComponentsStorage> Destruction;
-
+        
         Transform Transform { get; }
 
         void AddComponent(Component component);

@@ -24,7 +24,7 @@ namespace KMK.Model.Weapon
         public Weapon(IComponentsStorage parent, float firerate) : base(parent)
         {
             _firerate = firerate;
-            _delayBetweenShots = firerate / 60f;
+            _delayBetweenShots = 60f / firerate;
         }
 
         private float _reloadProgress()

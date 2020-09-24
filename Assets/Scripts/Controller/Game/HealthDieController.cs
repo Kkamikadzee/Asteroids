@@ -24,6 +24,7 @@ namespace Controller.Game
         private float _currentRespawnTime;
         
         public event Action DisconnectFromObserver;
+        public event Action EndGame;
 
         public HealthDieController(IAsteroidsSpawner spawner, AsteroidsDataStorage dataStorage, AsteroidsControllers controllers,
             Health health, float respawnTime)
@@ -34,7 +35,7 @@ namespace Controller.Game
             _controllers = controllers;
             _health = health;
 
-            _respawn = false;
+            _respawn = true;
             _respawnTime = respawnTime;
             _currentRespawnTime = 0;
         }
@@ -44,30 +45,35 @@ namespace Controller.Game
             if (_respawn)
             {
                 _currentRespawnTime += deltaTime;
+                if (_currentRespawnTime >= _respawnTime)
                 {
-                    if (_currentRespawnTime >= _respawnTime)
-                    {
-                        _respawn = false;
-                        _currentRespawnTime = 0;
-                        
-                        Transform transform = new Transform(Vector3.Zero, Vector3.Zero);
-                        var tmp = _spawner.SpawnPlayer(transform, _dataStorage.Player);
-                        _controllers.PlayerController = tmp;
+                    _respawn = false;
+                    _currentRespawnTime = 0;
+                    
+                    Transform transform = new Transform(Vector3.Zero, Vector3.Zero);
+                    var tmp = _spawner.SpawnPlayer(transform, _dataStorage.Player);
+                    _controllers.PlayerController = tmp;
 
-                        foreach (var ufoController in _controllers.UfoControllers.Controllers)
-                        {
-                            ufoController.GameObjectModel.GetComponent<PursuerPointer>().Pursued = transform;
-                        }
+                    foreach (var ufoController in _controllers.UfoControllers.Controllers)
+                    {
+                        ufoController.GameObjectModel.GetComponent<PursuerPointer>().Pursued = transform;
                     }
                 }
             }
-            
         }
 
         public void SubHealth(IComponentsStorage componentsStorage)
         {
             _health.SubHealth();
-            _respawn = true;
+            if (_health.CurrentHealth >= 0)
+            {
+                _respawn = true;
+                _controllers.PlayerController = null;
+            }
+            else
+            {
+                EndGame?.Invoke();
+            }
         }
     }
 }

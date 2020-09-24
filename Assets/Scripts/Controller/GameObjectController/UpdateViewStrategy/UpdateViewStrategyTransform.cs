@@ -8,6 +8,7 @@ namespace Controller.GameObjectController.UpdateViewStrategy
     {
         private Transform _transformModel;
 
+        public UpdateViewStrategyTransform() { }
         public UpdateViewStrategyTransform(Transform transformModel)
         {
             _transformModel = transformModel;
@@ -24,7 +25,7 @@ namespace Controller.GameObjectController.UpdateViewStrategy
                 
             if (!transformView.DisplayedEulerAngles.IsEquivalentTo(_transformModel.EulerAngles))
             {
-                transformView.RotateTo(_transformModel.Position);
+                transformView.RotateTo(_transformModel.EulerAngles);
             }
 
             if (!transformView.DisplayedScale.IsEquivalentTo(_transformModel.Scale))

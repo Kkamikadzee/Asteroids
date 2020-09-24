@@ -1,10 +1,11 @@
 ﻿using System;
 using KMK.Model.Other;
 using KMK.Model.Scorer;
+using KMK.Model.Updater;
 
 namespace Controller.Game
 {
-    public class HealthScoreController
+    public class HealthScoreController: IUpdatable
     {
         private Health _health;
         private Scorer _scorer;

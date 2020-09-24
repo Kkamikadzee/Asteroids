@@ -10,14 +10,18 @@ namespace KMK.Model.Other.Rectangle
         private IRectangle _boundary;
         private IBounce _bounce;
         
+        private float _teleportDelta;
+
         public event Action<BouncingInRectangle> Destruction;
         public event Action DisconnectFromObserver;
 
+        //На +teleportDelta объект смещается при рикошете на противоположную сторону
         public BouncingInRectangle(IComponentsStorage parent,
-            IRectangle boundary, IBounce bounce) : base(parent)
+            IRectangle boundary, IBounce bounce, float teleportDelta = 0.001f) : base(parent)
         {
             _boundary = boundary;
             _bounce = bounce;
+            _teleportDelta = teleportDelta;
         }
 
         private void _update()
@@ -25,20 +29,24 @@ namespace KMK.Model.Other.Rectangle
             var LeftBottomPointBorder = _boundary.LeftBottomPoint;
             var RightTopPoint = _boundary.RightTopPoint;
 
-            if ((Transform.Position.X - Transform.Scale.X / 2f) < LeftBottomPointBorder.X)
+            if ((Transform.Position.X) < LeftBottomPointBorder.X)
             {
+                Transform.Translate(_teleportDelta, 0 , 0f);
                 _bounce.Bounce(Vector3.Right);
             }
-            else if ((Transform.Position.X + Transform.Scale.X / 2f) > LeftBottomPointBorder.X)
+            else if ((Transform.Position.X) > RightTopPoint.X)
             {
+                Transform.Translate(- _teleportDelta, 0 , 0f);
                 _bounce.Bounce(Vector3.Left);
             }
-            else if ((Transform.Position.Y - Transform.Scale.Y / 2f) < LeftBottomPointBorder.Y)
+            else if ((Transform.Position.Y) < LeftBottomPointBorder.Y)
             {
+                Transform.Translate(0, _teleportDelta, 0f);
                 _bounce.Bounce(Vector3.Up);
             }
-            else if ((Transform.Position.Y + Transform.Scale.Y / 2f) > LeftBottomPointBorder.Y)
+            else if ((Transform.Position.Y) > RightTopPoint.Y)
             {
+                Transform.Translate(0, - _teleportDelta, 0f);
                 _bounce.Bounce(Vector3.Down);
             }
         }

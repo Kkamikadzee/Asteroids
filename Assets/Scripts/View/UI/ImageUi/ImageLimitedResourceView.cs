@@ -14,6 +14,8 @@ namespace View.UI.ImageUi
         
         private Transform _instantiateParent;
         
+        private float _paddingBetweenObjects = 32f;
+
         public override event Action DisconnectFromObserver;
         public override event Action Refresh;
 
@@ -36,23 +38,27 @@ namespace View.UI.ImageUi
             {
                 while (_currentDisplayedAmountResource < amountResource)
                 {
-                    if (_displayedResourceList.Count < _currentDisplayedAmountResource)
+                    if (_displayedResourceList.Count <= _currentDisplayedAmountResource)
                     {
                         _displayedResourceList.Add(
                             Object.Instantiate(_resourcePrefab, _instantiateParent));
-                        _currentDisplayedAmountResource++;
+                        _displayedResourceList[_currentDisplayedAmountResource].transform.position = new Vector3(
+                            _displayedResourceList[_currentDisplayedAmountResource].transform.position.x + _currentDisplayedAmountResource * _paddingBetweenObjects,
+                            _displayedResourceList[_currentDisplayedAmountResource].transform.position.y, _displayedResourceList[_currentDisplayedAmountResource].transform.position.z);
+                        _displayedResourceList[_currentDisplayedAmountResource].SetActive(true);
                     }
                     else
                     {
-                        _displayedResourceList[_currentDisplayedAmountResource].SetActive(true);
+                        _displayedResourceList[(_currentDisplayedAmountResource - 1)].SetActive(true);
                     }
+                    _currentDisplayedAmountResource++;
                 }
             }
             else
             {
-                while (_currentDisplayedAmountResource >= amountResource)
+                while (_currentDisplayedAmountResource > amountResource)
                 {
-                    _displayedResourceList[_currentDisplayedAmountResource--].SetActive(false);
+                    _displayedResourceList[(--_currentDisplayedAmountResource)].SetActive(false);
                 }
             }
             

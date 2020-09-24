@@ -7,7 +7,7 @@ namespace Controller.Game
     {
         private AsteroidsControllers _controllers;
 
-        public Transform PlayerTransform => _controllers.PlayerController.GameObjectModel.Transform;
+        public Transform PlayerTransform => _controllers.PlayerController?.GameObjectModel.Transform;
 
         public AsteroidsPlayerTransform(AsteroidsControllers controllers)
         {

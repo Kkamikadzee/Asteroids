@@ -7,11 +7,16 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AsteroidsGameStarter.cs" t="Include" />
           <e p="Controller" t="Include">
             <e p="Game" t="Include">
+              <e p="AsteroidsGame.cs" t="Include" />
+              <e p="AsteroidsGameControllers.cs" t="Include" />
+              <e p="AsteroidsLevelController.cs" t="Include" />
               <e p="AsteroidsPlayerTransform.cs" t="Include" />
               <e p="HealthDieController.cs" t="Include" />
               <e p="HealthScoreController.cs" t="Include" />
+              <e p="ViewChanger.cs" t="Include" />
             </e>
             <e p="GameObjectController" t="Include">
               <e p="AsteroidsControllers.cs" t="Include" />
@@ -43,9 +48,12 @@
             <e p="UnityVector3Extension.cs" t="Include" />
           </e>
           <e p="GameManager.cs" t="Include" />
-          <e p="InputModel.cs" t="Include" />
+          <e p="Input" t="Include">
+            <e p="PlayerInputController.cs" t="Include" />
+            <e p="SystemInput.cs" t="Include" />
+          </e>
           <e p="Model" t="Include">
-            <e p="ComponentsStorageBuilder" t="Include">
+            <e p="Builder" t="Include">
               <e p="AsteroidComponentsStorageBuilder.cs" t="Include" />
               <e p="BulletComponentsStorageBuilder.cs" t="Include" />
               <e p="PlayerComponentsStorageBuilder.cs" t="Include" />
@@ -58,34 +66,28 @@
               <e p="PlayerData.cs" t="Include" />
               <e p="UfoData.cs" t="Include" />
             </e>
+            <e p="Director" t="Include">
+              <e p="AsteroidComponentsStorageDirector.cs" t="Include" />
+              <e p="BulletComponentsStorageDirector.cs" t="Include" />
+              <e p="PlayerComponentsStorageDirector.cs" t="Include" />
+              <e p="UfoComponentsStorageDirector.cs" t="Include" />
+            </e>
+            <e p="Factory" t="Include">
+              <e p="AsteroidsComponentsStorageFactory.cs" t="Include" />
+              <e p="IAsteroidsComponentsStorageFactory.cs" t="Include" />
+            </e>
           </e>
           <e p="Spawner" t="Include">
+            <e p="AsteroidsSpawner.cs" t="Include" />
             <e p="ChildrenSpawner" t="Include">
-              <e p="IChildrenSpawnerHelper.cs" t="Include" />
+              <e p="AsteroidChildrenSpawner.cs" t="Include" />
+              <e p="AsteroidChildrenSpawnerHelper.cs" t="Include" />
+              <e p="CannonChildrenSpawnerHelper.cs" t="Include" />
+              <e p="ChildrenSpawnerHelper.cs" t="Include" />
+              <e p="IAsteroidChildrenSpawner.cs" t="Include" />
+              <e p="LaserChildrenSpawnerHelper.cs" t="Include" />
             </e>
             <e p="IAsteroidsSpawner.cs" t="Include" />
-          </e>
-          <e p="SystemInput.cs" t="Include" />
-          <e p="Trash" t="Include">
-            <e p="CannonBulletView.cs" t="Include" />
-            <e p="EnemyController.cs" t="Include" />
-            <e p="EnemyData.cs" t="Include" />
-            <e p="EnemyManager.cs" t="Include" />
-            <e p="EnemyModel.cs" t="Include" />
-            <e p="EnemyMoveSystem.cs" t="Include" />
-            <e p="EnemySpawnManager.cs" t="Include" />
-            <e p="EnemyView.cs" t="Include" />
-            <e p="LaserBulletView.cs" t="Include" />
-            <e p="PlayerController.cs" t="Include" />
-            <e p="PlayerData.cs" t="Include" />
-            <e p="PlayerManager.cs" t="Include" />
-            <e p="PlayerModel.cs" t="Include" />
-            <e p="PlayerMoveSystem.cs" t="Include" />
-            <e p="PlayerShootSystem.cs" t="Include" />
-            <e p="PlayerView.cs" t="Include" />
-            <e p="PlayerViewUI.cs" t="Include" />
-            <e p="ScoringSystem.cs" t="Include" />
-            <e p="SpawnEnemySystem.cs" t="Include" />
           </e>
           <e p="Update" t="Include">
             <e p="IUpdater.cs" t="Include" />
@@ -125,6 +127,10 @@
               </e>
               <e p="TransformMutableView.cs" t="Include" />
               <e p="TransformView.cs" t="Include" />
+              <e p="ViewFactory" t="Include">
+                <e p="AsteroidsGameObjectViewFactory.cs" t="Include" />
+                <e p="IAsteroidsGameObjectViewFactory.cs" t="Include" />
+              </e>
               <e p="ViewState.cs" t="Include" />
             </e>
             <e p="UI" t="Include">

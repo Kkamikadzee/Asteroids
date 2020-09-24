@@ -15,6 +15,7 @@ namespace View.UI.TextUi
             Text scoreText) : base(position, displayedScore)
         {
             _scoreText = scoreText;
+            _scoreText.text = _displayedScore.ToString();
         }
 
         public override void SetScore(float score)

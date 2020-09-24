@@ -12,14 +12,9 @@ namespace KMK.Model.Other.Rectangle
         public event Action<MoveInRectangle> Destruction;
         public event Action DisconnectFromObserver;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="parent"></param>
-        /// <param name="boundary"></param>
-        /// <param name="teleportDelta">На +teleportDelta объект смещается при перемещение на противоположную сторону</param>
+        //На +teleportDelta объект смещается при перемещение на противоположную сторону
         public MoveInRectangle(IComponentsStorage parent,
-            IRectangle boundary, float teleportDelta = 0.01f) : base(parent)
+            IRectangle boundary, float teleportDelta = 0.001f) : base(parent)
         {
             _boundary = boundary;
             _teleportDelta = teleportDelta;

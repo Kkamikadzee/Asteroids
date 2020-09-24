@@ -45,6 +45,8 @@ namespace KMK.Model.Base
             {
                 component.Destroy();
             }
+            
+            Destruction?.Invoke(this);
 
             _components = null;
             _transform = null;
@@ -53,8 +55,6 @@ namespace KMK.Model.Base
         public void Destroy(Component component)
         {
             Destroy();
-            
-            Destruction?.Invoke(this);
         }
     }
 }

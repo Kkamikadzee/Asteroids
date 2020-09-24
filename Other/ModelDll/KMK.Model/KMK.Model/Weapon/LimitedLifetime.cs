@@ -9,6 +9,7 @@ namespace KMK.Model.Weapon
         private float _lifetime;
         private float _currentLifetime;
         
+        public event Action<LimitedLifetime> TimeOver;
         public event Action<LimitedLifetime> Destruction;
         public event Action DisconnectFromObserver;
 
@@ -20,6 +21,10 @@ namespace KMK.Model.Weapon
         public void Update(float deltaTime)
         {
             _currentLifetime += deltaTime;
+            if (_currentLifetime >= _lifetime)
+            {
+                TimeOver?.Invoke(this);
+            }
         }
         
         public override void Destroy()

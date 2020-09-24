@@ -26,23 +26,55 @@ namespace KMK.Model.Move
 
         public void Accelerate()
         {
-            if (_mover.AngularVelocity + _angularAcceleration < _maxAngularVelocity)
+            if (_mover.AngularVelocity + _angularAcceleration <= _maxAngularVelocity)
             {
                 _mover.AddAngularVelocity(_angularAcceleration);
+            }
+            else
+            {
+                _mover.AddAngularVelocity(_maxAngularVelocity - _mover.AngularVelocity);
             }
         }
 
         public void Decelerate()
         {
-            if (_mover.AngularVelocity - _angularAcceleration > - _maxAngularVelocity)
+            if (-_maxAngularVelocity <= _mover.AngularVelocity - _angularAcceleration)
             {
                 _mover.AddAngularVelocity(-_angularAcceleration);
+            }
+            else
+            {
+                _mover.AddAngularVelocity(-_maxAngularVelocity - _mover.AngularVelocity);
             }
         }
 
         public void Update(float deltaTime)
         {
-            _mover.AddAngularVelocity(-(_angularDrag * deltaTime));
+            if (_mover.AngularVelocity != 0)
+            {
+                if (_mover.AngularVelocity > 0)
+                {
+                    if (_mover.AngularVelocity - (_angularDrag * deltaTime) <= 0f)
+                    {
+                        _mover.AddAngularVelocity(-_mover.AngularVelocity);
+                    }
+                    else
+                    {
+                        _mover.AddAngularVelocity(-(_angularDrag * deltaTime));
+                    }
+                }
+                else
+                {
+                    if (_mover.AngularVelocity + (_angularDrag * deltaTime) >= 0f)
+                    {
+                        _mover.AddAngularVelocity(-_mover.AngularVelocity);
+                    }
+                    else
+                    {
+                        _mover.AddAngularVelocity((_angularDrag * deltaTime));
+                    }
+                }
+            }
         }
         
         public override void Destroy()

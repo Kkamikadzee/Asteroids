@@ -5,22 +5,100 @@ using View.GameObjectView.Creator.Polygon;
 
 namespace View.GameObjectView.CreatorFactory.Polygon
 {
-    public class PolygonGameObjectViewCreatorFactory: IGameObjectViewCreatorFactory
+    public class PolygonGameObjectViewCreatorFactory: MonoBehaviour, IGameObjectViewCreatorFactory
     {
         private IUpdater _updater;
 
-        private Transform _instantiateParent;
+        [SerializeField] private Transform _instantiateParent;
         
-        private GameObject _playerPrefab;
+        [SerializeField] private GameObject _playerPrefab;
 
-        private GameObject _asteroidPrefab;
+        [SerializeField] private GameObject _asteroidPrefab;
 
-        private GameObject _ufoPrefab;
+        [SerializeField] private GameObject _ufoPrefab;
 
-        private GameObject _cannonBulletPrefab;
+        [SerializeField] private GameObject _cannonBulletPrefab;
 
-        private GameObject _laserBulletPrefab;
+        [SerializeField] private GameObject _laserBulletPrefab;
 
+        public GameObjectViewCreator PlayerCreator
+        {
+            get
+            {
+                if(_updater != null)
+                {
+                    return new PolygonTransformGameObjectViewCreator(_updater, _playerPrefab, _instantiateParent);
+                }
+
+                return null;
+            }
+        }
+
+        public GameObjectViewCreator AsteroidCreator
+        {
+            get
+            {
+                if(_updater != null)
+                {
+                    return new PolygonTransformGameObjectViewCreator(_updater, _asteroidPrefab, _instantiateParent);
+                }
+
+                return null;
+            }
+        }
+
+
+        public GameObjectViewCreator UfoCreator
+        {
+            get
+            {
+                if(_updater != null)
+                {
+                    return new PolygonTransformGameObjectViewCreator(_updater, _ufoPrefab, _instantiateParent);
+                }
+
+                return null;
+            }
+        }
+
+        public GameObjectViewCreator CannonBulletCreator
+        {
+            get
+            {
+                if(_updater != null)
+                {
+                    return new PolygonTransformGameObjectViewCreator(_updater, _cannonBulletPrefab, _instantiateParent);
+                }
+
+                return null;
+            }
+        }
+
+        
+        public GameObjectViewCreator LaserBulletCreator
+        {
+            get
+            {
+                if(_updater != null)
+                {
+                    return new PolygonTransformGameObjectViewCreator(_updater, _laserBulletPrefab, _instantiateParent);
+                }
+
+                return null;
+            }
+        }
+
+        
+        public IUpdater Updater
+        {
+            set => _updater = value;
+        }
+
+        public PolygonGameObjectViewCreatorFactory(IUpdater updater)
+        {
+            _updater = updater;
+        }
+        
         public PolygonGameObjectViewCreatorFactory(IUpdater updater, Transform instantiateParent,
             GameObject playerPrefab,
             GameObject asteroidPrefab, GameObject ufoPrefab,
@@ -40,21 +118,5 @@ namespace View.GameObjectView.CreatorFactory.Polygon
 
             _laserBulletPrefab = laserBulletPrefab;
         }
-
-        public GameObjectViewCreator PlayerCreator =>
-            new PolygonTransformGameObjectViewCreator(_updater, _playerPrefab, _instantiateParent);
-
-        public GameObjectViewCreator AsteroidCreator => 
-            new PolygonTransformGameObjectViewCreator(_updater, _asteroidPrefab, _instantiateParent);
-
-        public GameObjectViewCreator UfoCreator => 
-            new PolygonTransformGameObjectViewCreator(_updater, _ufoPrefab, _instantiateParent);
-
-        public GameObjectViewCreator CannonBulletCreator => 
-            new PolygonTransformGameObjectViewCreator(_updater, _cannonBulletPrefab, _instantiateParent);
-
-        public GameObjectViewCreator LaserBulletCreator => 
-            new PolygonTransformGameObjectViewCreator(_updater, _laserBulletPrefab, _instantiateParent);
-
     }
 }

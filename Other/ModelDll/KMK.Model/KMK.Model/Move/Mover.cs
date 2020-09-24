@@ -8,7 +8,9 @@ namespace KMK.Model.Move
     {
         private Vector3 _directionMove;
         private float _velocity;
-        private float _angularVelocity;
+
+        private float _currentAngleZ;
+        private float _angularVelocity; // deg per sec
         private bool _isRotateObject;
 
         public event Action<Mover> Destruction;
@@ -17,8 +19,20 @@ namespace KMK.Model.Move
         public Vector3 DirectionMove
         {
             get => _directionMove;
-            set => _directionMove = value;
+            set
+            {
+                _directionMove = value;
+                if (_directionMove.Y >= 0)
+                {
+                    _currentAngleZ= (float)(Math.Acos(_directionMove.X) * 180 / Math.PI);
+                }
+                else
+                {
+                    _currentAngleZ = (float) -(Math.Acos(_directionMove.X) * 180 / Math.PI);
+                }
+            }
         }
+
         public float Velocity => _velocity;
         public float AngularVelocity => _angularVelocity;
         public bool IsRotateObject
@@ -29,28 +43,39 @@ namespace KMK.Model.Move
 
         public Mover(IComponentsStorage parent) : base(parent) { }
 
-        public Mover(IComponentsStorage parent, Vector3 directionMove,
+        public Mover(IComponentsStorage parent, float angleDirectionMove,
+            float velocity, float angularVelocity, 
             bool isRotateObject = false) : base(parent)
         {
-            _directionMove = directionMove;
+            _currentAngleZ = angleDirectionMove;
+            _directionMove = new Vector3(
+                (float) Math.Cos(_currentAngleZ * Math.PI / 180f), 
+                (float) Math.Sin(_currentAngleZ * Math.PI / 180f),
+                0);
+
             _isRotateObject = isRotateObject;
-        }        
-		
-		public Mover(IComponentsStorage parent, float velocity,
-            float angularVelocity) : base(parent)
-        {
             _velocity = velocity;
-			_angularVelocity = angularVelocity;
-        }        
-		
-		public Mover(IComponentsStorage parent, Vector3 directionMove,
+            _angularVelocity = angularVelocity;
+        }
+        
+        public Mover(IComponentsStorage parent, Vector3 directionMove,
             float velocity, float angularVelocity, 
-			bool isRotateObject = false) : base(parent)
+            bool isRotateObject = false) : base(parent)
         {
+            
             _directionMove = directionMove;
+            if (_directionMove.Y >= 0)
+            {
+                _angularVelocity= (float)(Math.Acos(_directionMove.X) * 180 / Math.PI);
+            }
+            else
+            {
+                _angularVelocity = (float) -(Math.Acos(_directionMove.X) * 180 / Math.PI);
+            }
+            
             _isRotateObject = isRotateObject;
             _velocity = velocity;
-			_angularVelocity = angularVelocity;
+            _angularVelocity = angularVelocity;
         }
         
         public void AddVelocity(float delta)
@@ -65,9 +90,24 @@ namespace KMK.Model.Move
 
         public void Update(float deltaTime)
         {
-            Transform.Translate(_directionMove * (_velocity * deltaTime));
-            Transform.TurnOn(0, 0,
-                _angularVelocity * deltaTime);
+            if (_velocity != 0)
+            {
+                Transform.Translate(_directionMove * (_velocity * deltaTime));
+            }
+
+            if (_angularVelocity != 0)
+            {
+                _currentAngleZ += (_angularVelocity * deltaTime) % 360f;
+
+                _directionMove.X = (float) Math.Cos(_currentAngleZ * Math.PI / 180f);
+                _directionMove.Y = (float) Math.Sin(_currentAngleZ * Math.PI / 180f);
+            
+                if (_isRotateObject)
+                {
+                    Transform.Rotate(0, 0,
+                        _currentAngleZ);
+                }
+            }
         }
 
         public override void Destroy()

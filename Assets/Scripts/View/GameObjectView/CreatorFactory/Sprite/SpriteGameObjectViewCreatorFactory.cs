@@ -5,23 +5,98 @@ using View.GameObjectView.Creator.Sprite;
 
 namespace View.GameObjectView.CreatorFactory.Sprite
 {
-    public class SpriteGameObjectViewCreatorFactory: IGameObjectViewCreatorFactory
+    public class SpriteGameObjectViewCreatorFactory: MonoBehaviour, IGameObjectViewCreatorFactory
     {
         private IUpdater _updater;
-
-        private Transform _instantiateParent;
         
-        private UnityEngine.Sprite[] _playerSprites;
-        private GameObject _playerPrefab;
+        [SerializeField] private Transform _instantiateParent;
+        
+        [SerializeField] private UnityEngine.Sprite[] _playerSprites;
+        [SerializeField] private GameObject _playerPrefab;
 
-        private GameObject _asteroidPrefab;
+        [SerializeField] private GameObject _asteroidPrefab;
 
-        private GameObject _ufoPrefab;
+        [SerializeField] private GameObject _ufoPrefab;
 
-        private GameObject _cannonBulletPrefab;
+        [SerializeField] private GameObject _cannonBulletPrefab;
 
-        private GameObject _laserBulletPrefab;
+        [SerializeField] private GameObject _laserBulletPrefab;
 
+        public GameObjectViewCreator PlayerCreator
+        {
+            get
+            {
+                if (_updater != null)
+                {
+                    return new SpriteTransformMutableGameObjectViewCreator(_updater, _playerPrefab, _instantiateParent,
+                        _playerSprites);
+                }
+
+                return null;
+            }
+        }
+
+        public GameObjectViewCreator AsteroidCreator
+        {
+            get
+            {
+                if (_updater != null)
+                {
+                    return new SpriteTransformGameObjectViewCreator(_updater, _asteroidPrefab, _instantiateParent);
+                }
+                
+                return null;
+            }
+        }
+
+        public GameObjectViewCreator UfoCreator
+        {
+            get
+            {
+                if (_updater != null)
+                {
+                    return new SpriteTransformGameObjectViewCreator(_updater, _ufoPrefab, _instantiateParent);
+                }
+                
+                return null;
+            }
+        }
+
+        public GameObjectViewCreator CannonBulletCreator
+        {
+            get
+            {
+                if (_updater != null)
+                {
+                    return new SpriteTransformGameObjectViewCreator(_updater, _cannonBulletPrefab, _instantiateParent);
+                }
+                
+                return null;
+            }
+        }
+
+        public GameObjectViewCreator LaserBulletCreator
+        {
+            get
+            {
+                if (_updater != null)
+                {
+                    return new SpriteTransformGameObjectViewCreator(_updater, _laserBulletPrefab, _instantiateParent);
+                }
+                
+                return null;
+            }
+        }
+
+        public IUpdater Updater
+        {
+            set => _updater = value;
+        }
+
+        public SpriteGameObjectViewCreatorFactory(IUpdater updater)
+        {
+            _updater = updater;
+        }
         public SpriteGameObjectViewCreatorFactory(IUpdater updater, Transform instantiateParent,
             UnityEngine.Sprite[] playerSprites, GameObject playerPrefab,
             GameObject asteroidPrefab, GameObject ufoPrefab,
@@ -42,20 +117,6 @@ namespace View.GameObjectView.CreatorFactory.Sprite
 
             _laserBulletPrefab = laserBulletPrefab;
         }
-
-        public GameObjectViewCreator PlayerCreator => 
-            new SpriteTransformMutableGameObjectViewCreator(_updater, _playerPrefab, _instantiateParent, _playerSprites);
-
-        public GameObjectViewCreator AsteroidCreator => 
-            new SpriteTransformGameObjectViewCreator(_updater, _asteroidPrefab, _instantiateParent);
-
-        public GameObjectViewCreator UfoCreator => 
-            new SpriteTransformGameObjectViewCreator(_updater, _ufoPrefab, _instantiateParent);
-
-        public GameObjectViewCreator CannonBulletCreator => 
-            new SpriteTransformGameObjectViewCreator(_updater, _cannonBulletPrefab, _instantiateParent);
-
-        public GameObjectViewCreator LaserBulletCreator => 
-            new SpriteTransformGameObjectViewCreator(_updater, _laserBulletPrefab, _instantiateParent);
+        
     }
 }

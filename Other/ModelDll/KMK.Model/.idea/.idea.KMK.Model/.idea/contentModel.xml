@@ -31,7 +31,6 @@
           <e p="CollisionChecker.cs" t="Include" />
           <e p="ICollision.cs" t="Include" />
           <e p="ICollisionChecker.cs" t="Include" />
-          <e p="IfCollisionDestroyer.cs" t="Include" />
           <e p="SimpleCollision.cs" t="Include" />
           <e p="SphereCollider.cs" t="Include" />
         </e>

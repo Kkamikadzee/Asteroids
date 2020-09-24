@@ -2,16 +2,17 @@
 
 namespace KMK.Model.Other.Rectangle
 {
-    public class Rectangle : Component, IRectangle, IScalableRectangle
+    public class Rectangle : IRectangle, IScalableRectangle
     {
         private float _width;
         private float _height;
+        private Vector3 _center;
 
-        public Rectangle(IComponentsStorage parent,
-            float width, float height) : base(parent)
+        public Rectangle(float width, float height, Vector3 center)
         {
             _width = width;
             _height = height;
+            _center = center;
         }
 
         public float Width
@@ -41,49 +42,49 @@ namespace KMK.Model.Other.Rectangle
         public Vector3 LeftBottomPoint => 
             new Vector3()
             {
-                X = Transform.Position.X - _width / 2f,
-                Y = Transform.Position.Y - _height / 2f,
-                Z = Transform.Position.Z
+                X = _center.X - _width / 2f,
+                Y = _center.Y - _height / 2f,
+                Z = _center.Z
             };
         
         public Vector3 LeftTopPoint => 
             new Vector3()
             {
-                X = Transform.Position.X - _width / 2f,
-                Y = Transform.Position.Y + _height / 2f,
-                Z = Transform.Position.Z
+                X = _center.X - _width / 2f,
+                Y = _center.Y + _height / 2f,
+                Z = _center.Z
             };
 
         public Vector3 RightBottomPoint =>
             new Vector3()
             {
-                X = Transform.Position.X + _width / 2f,
-                Y = Transform.Position.Y - _height / 2f,
-                Z = Transform.Position.Z
+                X = _center.X + _width / 2f,
+                Y = _center.Y - _height / 2f,
+                Z = _center.Z
             };
         
         public Vector3 RightTopPoint =>
             new Vector3()
             {
-                X = Transform.Position.X + _width / 2f,
-                Y = Transform.Position.Y + _height / 2f,
-                Z = Transform.Position.Z
+                X = _center.X + _width / 2f,
+                Y = _center.Y + _height / 2f,
+                Z = _center.Z
             };
 
         public bool InRectangle(Vector3 point)
         {
-            return ((point.X > Transform.Position.X - _width / 2)
-                    && (point.X < Transform.Position.X + _width / 2)
-                    && (point.Y > Transform.Position.Y - _height / 2)
-                    && (point.Y < Transform.Position.Y + _height / 2));
+            return ((point.X > _center.X - _width / 2)
+                    && (point.X < _center.X + _width / 2)
+                    && (point.Y > _center.Y - _height / 2)
+                    && (point.Y < _center.Y + _height / 2));
         }
         
         public bool InRectangle(Transform transform)
         {
-            return (((transform.Position.X - transform.Scale.X / 2f) > Transform.Position.X - _width / 2)
-                    && ((transform.Position.X + transform.Scale.X / 2f) < Transform.Position.X + _width / 2)
-                    && ((transform.Position.Y - transform.Scale.Y / 2f) > Transform.Position.Y - _height / 2)
-                    && ((transform.Position.Y + transform.Scale.Y / 2f) < Transform.Position.Y + _height / 2));
+            return (((transform.Position.X - transform.Scale.X / 2f) > _center.X - _width / 2)
+                    && ((transform.Position.X + transform.Scale.X / 2f) < _center.X + _width / 2)
+                    && ((transform.Position.Y - transform.Scale.Y / 2f) > _center.Y - _height / 2)
+                    && ((transform.Position.Y + transform.Scale.Y / 2f) < _center.Y + _height / 2));
         }
 
         public void SetScale(float width, float height)

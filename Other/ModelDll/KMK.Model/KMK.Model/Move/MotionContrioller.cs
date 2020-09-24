@@ -26,23 +26,55 @@ namespace KMK.Model.Move
 
         public void Accelerate()
         {
-            if (_mover.Velocity + _acceleration < _maxVelocity)
+            if (_mover.Velocity + _acceleration <= _maxVelocity)
             {
                 _mover.AddVelocity(_acceleration);
+            }
+            else
+            {
+                _mover.AddVelocity(_maxVelocity - _mover.Velocity);
             }
         }
 
         public void Decelerate()
         {
-            if (_mover.Velocity - _acceleration > - _maxVelocity)
+            if (-_maxVelocity <= _mover.Velocity - _acceleration)
             {
                 _mover.AddVelocity(-_acceleration);
+            }
+            else
+            {
+                _mover.AddVelocity(-_maxVelocity - _mover.Velocity);
             }
         }
 
         public void Update(float deltaTime)
         {
-            _mover.AddVelocity(-(_drag * deltaTime));
+            if (_mover.Velocity != 0)
+            {
+                if (_mover.Velocity > 0)
+                {
+                    if (_mover.Velocity - (_drag * deltaTime) <= 0f)
+                    {
+                        _mover.AddVelocity(-_mover.Velocity);
+                    }
+                    else
+                    {
+                        _mover.AddVelocity(-(_drag * deltaTime));
+                    }
+                }
+                else
+                {
+                    if (_mover.Velocity + (_drag * deltaTime) <= 0f)
+                    {
+                        _mover.AddVelocity(-_mover.Velocity);
+                    }
+                    else
+                    {
+                        _mover.AddVelocity((_drag * deltaTime));
+                    }
+                }
+            }
         }
         
         public override void Destroy()

@@ -8,7 +8,7 @@ namespace KMK.Model.Collision
         private Vector3 _centerPosition;
 
         public float Radius => _radius;
-        public Vector3 CenterPosition => _centerPosition;
+        public Vector3 CenterPosition => _centerPosition + Transform.Position;
 
         public SphereCollider(IComponentsStorage parent, ColliderTag tag,
             float radius) : base(parent, tag)

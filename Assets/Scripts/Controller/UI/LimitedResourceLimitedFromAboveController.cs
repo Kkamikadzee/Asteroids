@@ -27,6 +27,12 @@ namespace Controller.UI
 
         public LimitedResourceLimitedFromAboveController() { }
 
+        public LimitedResourceLimitedFromAboveController(LimitedResourceLimitedFromAboveView limitedResourceView)
+        {
+            _limitedResourceView = limitedResourceView;
+            _limitedResourceView.Refresh += UpdateView;
+        }
+
         public LimitedResourceLimitedFromAboveController(ILimitedResourceLimitedFromAbove limitedResource, 
             LimitedResourceLimitedFromAboveView limitedResourceView)
         {
@@ -38,13 +44,16 @@ namespace Controller.UI
 
         public void UpdateView()
         {
-            if(_limitedResourceView.DisplayedAmountResource != _limitedResource.CurrentAmountResource)
+            if (_limitedResource != null && _limitedResourceView != null)
             {
-                _limitedResourceView.SetAmountResource(_limitedResource.CurrentAmountResource);
-            }
-            if(_limitedResourceView.DisplayedMaxAmountResource != _limitedResource.MaxAmountResource)
-            {
-                _limitedResourceView.SetMaxAmountResource(_limitedResource.MaxAmountResource);
+                if(_limitedResourceView.DisplayedMaxAmountResource != _limitedResource.MaxAmountResource)
+                {
+                    _limitedResourceView.SetMaxAmountResource(_limitedResource.MaxAmountResource);
+                }
+                if(_limitedResourceView.DisplayedAmountResource != _limitedResource.CurrentAmountResource)
+                {
+                    _limitedResourceView.SetAmountResource(_limitedResource.CurrentAmountResource);
+                }
             }
         }    
     }

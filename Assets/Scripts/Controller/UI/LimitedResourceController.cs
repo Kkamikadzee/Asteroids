@@ -27,6 +27,12 @@ namespace Controller.UI
 
         public LimitedResourceController() { }
 
+        public LimitedResourceController(LimitedResourceView limitedResourceView)
+        {
+            _limitedResourceView = limitedResourceView;
+            _limitedResourceView.Refresh += UpdateView;
+        }
+
         public LimitedResourceController(ILimitedResource limitedResource, LimitedResourceView limitedResourceView)
         {
             _limitedResource = limitedResource;
@@ -37,9 +43,12 @@ namespace Controller.UI
 
         public void UpdateView()
         {
-            if(_limitedResourceView.DisplayedAmountResource != _limitedResource.CurrentAmountResource)
+            if (_limitedResource != null && _limitedResourceView != null)
             {
-                _limitedResourceView.SetAmountResource(_limitedResource.CurrentAmountResource);
+                if(_limitedResourceView.DisplayedAmountResource != _limitedResource.CurrentAmountResource)
+                {
+                    _limitedResourceView.SetAmountResource(_limitedResource.CurrentAmountResource);
+                }
             }
         }
     }

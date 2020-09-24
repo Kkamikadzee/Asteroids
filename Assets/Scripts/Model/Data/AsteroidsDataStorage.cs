@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Model.Data
 {
-    public class AsteroidsDataStorage: Component
+    public class AsteroidsDataStorage: MonoBehaviour
     {
         [SerializeField] private PlayerData _player;
         [SerializeField] private AsteroidData[] _sortedAsteroids;

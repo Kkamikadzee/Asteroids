@@ -42,6 +42,12 @@ namespace Controller.UI
 
         public ScorerController() { }
 
+        public ScorerController(ScorerView scorerView)
+        {
+            _scorerView = scorerView;
+            _scorerView.Refresh += UpdateView;
+        }
+        
         public ScorerController(Scorer scorer, TimeForfeitScore forfeitScore, ScorerView scorerView)
         {
             _scorer = scorer;
@@ -55,9 +61,12 @@ namespace Controller.UI
         
         public void UpdateView()
         {
-            if(_scorerView.DisplayedScore != _scorer.CurrentScore)
+            if (_scorer != null && _scorerView != null)
             {
-                _scorerView.SetScore(_scorer.CurrentScore);
+                if(_scorerView.DisplayedScore != _scorer.CurrentScore)
+                {
+                    _scorerView.SetScore(_scorer.CurrentScore);
+                }
             }
         }
     }

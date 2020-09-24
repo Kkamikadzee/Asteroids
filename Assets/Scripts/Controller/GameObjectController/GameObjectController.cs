@@ -17,7 +17,10 @@ namespace Controller.GameObjectController
             get => _componentsStorageModel;
             set
             {
-                _componentsStorageModel.Destruction -= _modelDestroyed;
+                if (_componentsStorageModel != null)
+                {
+                    _componentsStorageModel.Destruction -= _modelDestroyed;
+                }
 
                 _componentsStorageModel = value;
                 foreach (var strategy in _updateViewStrategies)
@@ -34,16 +37,23 @@ namespace Controller.GameObjectController
             get => _gameObjectView;
             set
             {
-                _gameObjectView.Refresh -= _updateGameObjectView;
+                if (_gameObjectView != null)
+                {
+                    _gameObjectView.Refresh -= _updateGameObjectView;
+                }
 
                 _gameObjectView = value;
                 
-                _gameObjectView.Refresh -= _updateGameObjectView;
+                _gameObjectView.Refresh += _updateGameObjectView;
             }
         }
 
         public event Action<GameObjectController> Destruction; 
         
+        public GameObjectController(IUpdateViewStrategy[] updateViewStrategies)
+        {
+            _updateViewStrategies = updateViewStrategies;
+        }
         public GameObjectController(IComponentsStorage componentsStorageModel,
             GameObjectView gameObjectView, IUpdateViewStrategy[] updateViewStrategies)
         {

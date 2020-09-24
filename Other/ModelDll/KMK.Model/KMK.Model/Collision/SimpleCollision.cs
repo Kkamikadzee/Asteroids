@@ -19,7 +19,7 @@ namespace KMK.Model.Collision
             SphereCollider secondCollider)
         {
             return (firstCollider.Radius + secondCollider.Radius)
-                   <= Vector3.Distance(firstCollider.CenterPosition
+                   >= Vector3.Distance(firstCollider.CenterPosition
                        , secondCollider.CenterPosition);
         }
     }

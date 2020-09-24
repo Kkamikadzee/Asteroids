@@ -18,20 +18,20 @@ namespace KMK.Model.Weapon
             float firerate, int maxAmountAmmo, float autoAddAmmoTime)
             : base(parent, firerate)
         {
+            _currentAmountAmmo = maxAmountAmmo;
             _maxAmountAmmo = maxAmountAmmo;
             _autoAddAmmoTime = autoAddAmmoTime;
         }
 
         private float _progressAddingAmmo()
         {
-            var progress = _autoAddAmmoTime / _currentAutoAddAmmoTime;
+            var progress = _currentAutoAddAmmoTime / _autoAddAmmoTime;
             return progress <= 1f ? progress : 1f;
         }
 
         protected override bool _canShoot()
         {
-            return (_currentAutoAddAmmoTime >= _autoAddAmmoTime) 
-                    && (_currentAmountAmmo > 0) 
+            return (_currentAmountAmmo > 0) 
                     && (base._canShoot());
         }
 

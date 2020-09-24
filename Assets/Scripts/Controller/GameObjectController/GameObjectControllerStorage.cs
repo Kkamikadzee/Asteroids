@@ -8,6 +8,11 @@ namespace Controller.GameObjectController
 
         public IReadOnlyList<GameObjectController> Controllers => _controllers.AsReadOnly();
 
+        public GameObjectControllerStorage()
+        {
+            _controllers = new List<GameObjectController>();
+        }
+        
         public void AddController(GameObjectController controller)
         {
             _controllers.Add(controller);

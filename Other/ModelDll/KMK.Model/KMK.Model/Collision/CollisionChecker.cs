@@ -24,27 +24,39 @@ namespace KMK.Model.Collision
 
         public void AddCollider(Collider collider)
         {
-            if (_colliders.Contains(collider))
-            {
-                return;
-            }
-            _colliders.Add(collider);
             if (collider.IsTrigger)
             {
-                _triggers.Add(collider);
+                if (!_triggers.Contains(collider))
+                {
+                    _triggers.Add(collider);
+                    collider.Destruction += RemoveCollider;
+                }
+            }
+            else
+            {
+                if (!_colliders.Contains(collider))
+                {
+                    _colliders.Add(collider);
+                    collider.Destruction += RemoveCollider;
+                }
             }
         }
 
         public void RemoveCollider(Collider collider)
         {
-            if (!_colliders.Contains(collider))
-            {
-                return;
-            }
-            _colliders.Remove(collider);
             if (collider.IsTrigger)
             {
-                _triggers.Remove(collider);
+                if (_triggers.Contains(collider))
+                {
+                    _triggers.Remove(collider);
+                }
+            }
+            else
+            {
+                if (_colliders.Contains(collider))
+                {
+                    _colliders.Remove(collider);
+                }
             }
         }
 
@@ -54,15 +66,10 @@ namespace KMK.Model.Collision
             {
                 foreach (var collider in _colliders)
                 {
-                    if (trigger == collider)
-                    {
-                        continue;
-                    }
-
                     if (_collision.OnCollision(trigger, collider))
                     {
-                        trigger.OnCollisionEnter();
-                        trigger.OnCollisionEnter();
+                        trigger.OnCollisionEnter(); 
+                        collider.OnCollisionEnter();
                     }
                 }
             }

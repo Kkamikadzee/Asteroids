@@ -12,6 +12,7 @@ namespace Controller.GameObjectController.UpdateViewStrategy
         
         private IVelocityMover _velocityMover;
         
+        public UpdateViewStrategyMutable() { }
         public UpdateViewStrategyMutable(IVelocityMover velocityMover)
         {
             _velocityMover = velocityMover;
