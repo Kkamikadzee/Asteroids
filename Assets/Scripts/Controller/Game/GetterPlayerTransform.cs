@@ -7,7 +7,21 @@ namespace Controller.Game
     {
         private GameObjectControllers _controllers;
 
-        public Transform PlayerTransform => _controllers?.PlayerController.GameObjectModel.Transform;
+        public Transform PlayerTransform
+        {
+            get
+            {
+                if (_controllers.PlayerController == null)
+                {
+                    return null;
+                }
+                else if (_controllers.PlayerController.GameObjectModel == null)
+                {
+                    return null;
+                }
+                return _controllers.PlayerController.GameObjectModel.Transform;
+            }
+        }
 
         public GetterPlayerTransform(GameObjectControllers controllers)
         {

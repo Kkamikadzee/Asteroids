@@ -424,7 +424,7 @@ MonoBehaviour:
   _oneHealthScore: 1000
   _startScore: 0
   _forfeitScoreInSecond: -1
-  _ufoSpawnProbability: 0.0001
+  _ufoSpawnProbability: 0.0005
   _camera: {fileID: 1860557281}
   _updater: {fileID: 178019065}
   _asteroidsUi: {fileID: 171136381}
@@ -1294,22 +1294,32 @@ PrefabInstance:
     - target: {fileID: 194709689825606799, guid: e80c1459d878cc947be6ea4ed992949b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 272789046052105856, guid: e80c1459d878cc947be6ea4ed992949b,
         type: 3}
       propertyPath: _audioSettings
       value: 
       objectReference: {fileID: 57003660}
+    - target: {fileID: 2649344011829137202, guid: e80c1459d878cc947be6ea4ed992949b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5368108917332597399, guid: e80c1459d878cc947be6ea4ed992949b,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5721764758278654702, guid: e80c1459d878cc947be6ea4ed992949b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6193764210410830503, guid: e80c1459d878cc947be6ea4ed992949b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6602427853301674460, guid: e80c1459d878cc947be6ea4ed992949b,
         type: 3}

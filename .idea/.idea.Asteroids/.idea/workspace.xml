@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05e4003e-f229-4938-b067-488303f425cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerUI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGameControllers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGameControllers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/IGameObjectControllerCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/IGameObjectControllerCreator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/MoveInRectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/MoveInRectangle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Diagrams/StartGame/StartGame.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Diagrams/StartGame/StartGame.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +320,7 @@
       <workItem from="1601880303193" duration="22843000" />
       <workItem from="1601992496839" duration="2429000" />
       <workItem from="1602314998681" duration="379000" />
-      <workItem from="1602315420740" duration="18213000" />
+      <workItem from="1602315420740" duration="20028000" />
     </task>
     <servers />
   </component>
@@ -371,10 +358,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="853" y="359" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1600432727381" />
-    <state width="760" height="466" key="DebuggerActiveHint" timestamp="1602323928976">
+    <state width="760" height="466" key="DebuggerActiveHint" timestamp="1602348071469">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="760" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1602323928976" />
+    <state width="760" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1602348071469" />
     <state x="1056" y="315" key="FileChooserDialogImpl" timestamp="1600001501522">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -479,6 +466,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs</url>
+          <line>9</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" initialLine="9">
+            <startOffsets>
+              <option value="232" />
+            </startOffsets>
+            <endOffsets>
+              <option value="288" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="DotNet Exception Breakpoints" />
         <breakpoint type="DotNet Exception Breakpoints">
