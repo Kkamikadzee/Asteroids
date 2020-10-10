@@ -13,7 +13,6 @@ namespace KMK.Model.Move
         private float _angularVelocity; // deg per sec
         private bool _isRotateObject;
 
-        public event Action<Mover> Destruction;
         public event Action DisconnectFromObserver;
 
         public Vector3 DirectionMove
@@ -115,7 +114,6 @@ namespace KMK.Model.Move
             base.Destroy();
 
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

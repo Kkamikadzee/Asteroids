@@ -29,9 +29,9 @@ namespace Controller.GameObjectController
 
         public void Clear()
         {
-            foreach (var controller in _controllers)
+            while (_controllers.Count != 0)
             {
-                controller.DestroyAll();
+                _controllers[0].Destroy();
             }
 
             _controllers.Clear();

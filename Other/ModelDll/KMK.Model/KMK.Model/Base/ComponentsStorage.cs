@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using KMK.Model.Destroyer;
 
 namespace KMK.Model.Base
 {
@@ -9,6 +10,7 @@ namespace KMK.Model.Base
         private List<Component> _components;
         private Transform _transform;
         
+        public event Action<IComponentsStorage> PreparingForDestruction;
         public event Action<IComponentsStorage> Destruction;
         public Transform Transform => _transform;
 
@@ -52,9 +54,13 @@ namespace KMK.Model.Base
             _transform = null;
         }
 
-        public void Destroy(Component component)
+        public void PrepareForDestroy()
         {
-            Destroy();
+            PreparingForDestruction?.Invoke(this);
+        }
+        public void PrepareForDestroy(Component component)
+        {
+            PrepareForDestroy();
         }
     }
 }

@@ -7,20 +7,27 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="AsteroidsGameStarter.cs" t="Include" />
+          <e p="Audio" t="Include">
+            <e p="Effects" t="Include">
+              <e p="EffectsSources.cs" t="Include" />
+              <e p="ModelSoundEffectsBinder.cs" t="Include" />
+            </e>
+            <e p="Music" t="Include">
+              <e p="MusicSources.cs" t="Include" />
+            </e>
+          </e>
           <e p="Controller" t="Include">
             <e p="Game" t="Include">
-              <e p="AsteroidsGame.cs" t="Include" />
               <e p="AsteroidsGameControllers.cs" t="Include" />
               <e p="AsteroidsLevelController.cs" t="Include" />
-              <e p="AsteroidsPlayerTransform.cs" t="Include" />
+              <e p="GetterPlayerTransform.cs" t="Include" />
               <e p="HealthDieController.cs" t="Include" />
               <e p="HealthScoreController.cs" t="Include" />
               <e p="ViewChanger.cs" t="Include" />
             </e>
             <e p="GameObjectController" t="Include">
-              <e p="AsteroidsControllers.cs" t="Include" />
               <e p="GameObjectController.cs" t="Include" />
+              <e p="GameObjectControllers.cs" t="Include" />
               <e p="GameObjectControllerStorage.cs" t="Include" />
               <e p="UpdateViewStrategy" t="Include">
                 <e p="IUpdateViewStrategy.cs" t="Include" />
@@ -47,10 +54,14 @@
             <e p="KmkVector3Extension.cs" t="Include" />
             <e p="UnityVector3Extension.cs" t="Include" />
           </e>
-          <e p="GameManager.cs" t="Include" />
           <e p="Input" t="Include">
             <e p="PlayerInputController.cs" t="Include" />
             <e p="SystemInput.cs" t="Include" />
+          </e>
+          <e p="Manager" t="Include">
+            <e p="AsteroidsGame.cs" t="Include" />
+            <e p="AsteroidsGameStarter.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
           </e>
           <e p="Model" t="Include">
             <e p="Builder" t="Include">
@@ -77,16 +88,24 @@
               <e p="IAsteroidsComponentsStorageFactory.cs" t="Include" />
             </e>
           </e>
+          <e p="Other" t="Include">
+            <e p="IAmountObjectsOnField.cs" t="Include" />
+            <e p="RandomTransform.cs" t="Include" />
+          </e>
+          <e p="Settings" t="Include">
+            <e p="AudioSettings.cs" t="Include" />
+            <e p="AudioSettingsParameters.cs" t="Include" />
+            <e p="PauseSettings.cs" t="Include" />
+          </e>
           <e p="Spawner" t="Include">
-            <e p="AsteroidsSpawner.cs" t="Include" />
             <e p="ChildrenSpawner" t="Include">
               <e p="AsteroidChildrenSpawner.cs" t="Include" />
-              <e p="AsteroidChildrenSpawnerHelper.cs" t="Include" />
-              <e p="CannonChildrenSpawnerHelper.cs" t="Include" />
-              <e p="ChildrenSpawnerHelper.cs" t="Include" />
-              <e p="IAsteroidChildrenSpawner.cs" t="Include" />
-              <e p="LaserChildrenSpawnerHelper.cs" t="Include" />
+              <e p="CannonChildrenSpawner.cs" t="Include" />
+              <e p="ChildrenSpawner.cs" t="Include" />
+              <e p="LaserChildrenSpawner.cs" t="Include" />
             </e>
+            <e p="GameObjectControllerCreator.cs" t="Include" />
+            <e p="GameObjectSpawner.cs" t="Include" />
             <e p="IAsteroidsSpawner.cs" t="Include" />
           </e>
           <e p="Update" t="Include">

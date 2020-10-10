@@ -10,7 +10,6 @@ namespace KMK.Model.Weapon
         private float _delayBetweenShots;
         private float _currentTimeBetweenShots;
         
-        public event Action<Weapon> Destruction;
         public event Action<Weapon> Shot;
         public event Action DisconnectFromObserver;
 
@@ -60,7 +59,6 @@ namespace KMK.Model.Weapon
             base.Destroy();
             
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

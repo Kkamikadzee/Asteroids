@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LaserBullet
   m_EditorClassIdentifier: 
   _scale: 1
-  _colliderRadius: 0.05
+  _colliderRadius: 0.06
   _colliderCenter: {x: 0, y: 0, z: 0}
   _colliderTag: 2
   _moverIsRotateObject: 0

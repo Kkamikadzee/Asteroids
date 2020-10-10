@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using KMK.Model.Base;
+using KMK.Model.Destroyer;
 using KMK.Model.Updater;
 
 namespace KMK.Model.Collision
@@ -60,16 +61,23 @@ namespace KMK.Model.Collision
             }
         }
 
-        public void Update(float deltaTime)
+        public void Update(float deltaTime) 
+            //Обновляется к цикле for, чтобы в процессе обновления коллекция могла меняться.
         {
-            foreach (var trigger in _triggers)
+            lock (_triggers)
             {
-                foreach (var collider in _colliders)
+                for(int i = 0; i < _triggers.Count; i++)
                 {
-                    if (_collision.OnCollision(trigger, collider))
+                    lock (_collision)
                     {
-                        trigger.OnCollisionEnter(); 
-                        collider.OnCollisionEnter();
+                        for(int j = 0; j < _colliders.Count; j++)
+                        {
+                            if (_collision.OnCollision(_triggers[i], _colliders[j]))
+                            {
+                                _triggers[i].OnCollisionEnter(); 
+                                _colliders[j].OnCollisionEnter();
+                            }
+                        }
                     }
                 }
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using KMK.Model.Base;
+using KMK.Model.Destroyer;
 using KMK.Model.Other.Bounce;
 using KMK.Model.Updater;
 
@@ -12,7 +13,6 @@ namespace KMK.Model.Other.Rectangle
         
         private float _teleportDelta;
 
-        public event Action<BouncingInRectangle> Destruction;
         public event Action DisconnectFromObserver;
 
         //На +teleportDelta объект смещается при рикошете на противоположную сторону
@@ -26,25 +26,25 @@ namespace KMK.Model.Other.Rectangle
 
         private void _update()
         {
-            var LeftBottomPointBorder = _boundary.LeftBottomPoint;
-            var RightTopPoint = _boundary.RightTopPoint;
+            var leftBottomPointBorder = _boundary.LeftBottomPoint;
+            var rightTopPoint = _boundary.RightTopPoint;
 
-            if ((Transform.Position.X) < LeftBottomPointBorder.X)
+            if ((Transform.Position.X) < leftBottomPointBorder.X)
             {
                 Transform.Translate(_teleportDelta, 0 , 0f);
                 _bounce.Bounce(Vector3.Right);
             }
-            else if ((Transform.Position.X) > RightTopPoint.X)
+            else if ((Transform.Position.X) > rightTopPoint.X)
             {
                 Transform.Translate(- _teleportDelta, 0 , 0f);
                 _bounce.Bounce(Vector3.Left);
             }
-            else if ((Transform.Position.Y) < LeftBottomPointBorder.Y)
+            else if ((Transform.Position.Y) < leftBottomPointBorder.Y)
             {
                 Transform.Translate(0, _teleportDelta, 0f);
                 _bounce.Bounce(Vector3.Up);
             }
-            else if ((Transform.Position.Y) > RightTopPoint.Y)
+            else if ((Transform.Position.Y) > rightTopPoint.Y)
             {
                 Transform.Translate(0, - _teleportDelta, 0f);
                 _bounce.Bounce(Vector3.Down);
@@ -66,7 +66,6 @@ namespace KMK.Model.Other.Rectangle
             base.Destroy();
             
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

@@ -58,17 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AsteroidsGameStarter.cs" />
-     <Compile Include="Assets\Scripts\Controller\Game\AsteroidsGame.cs" />
+     <Compile Include="Assets\Scripts\Audio\Effects\EffectsSources.cs" />
+     <Compile Include="Assets\Scripts\Audio\Effects\ModelSoundEffectsBinder.cs" />
+     <Compile Include="Assets\Scripts\Audio\Music\MusicSources.cs" />
      <Compile Include="Assets\Scripts\Controller\Game\AsteroidsGameControllers.cs" />
      <Compile Include="Assets\Scripts\Controller\Game\AsteroidsLevelController.cs" />
-     <Compile Include="Assets\Scripts\Controller\Game\AsteroidsPlayerTransform.cs" />
+     <Compile Include="Assets\Scripts\Controller\Game\GetterPlayerTransform.cs" />
      <Compile Include="Assets\Scripts\Controller\Game\HealthDieController.cs" />
      <Compile Include="Assets\Scripts\Controller\Game\HealthScoreController.cs" />
      <Compile Include="Assets\Scripts\Controller\Game\ViewChanger.cs" />
-     <Compile Include="Assets\Scripts\Controller\GameObjectController\AsteroidsControllers.cs" />
      <Compile Include="Assets\Scripts\Controller\GameObjectController\GameObjectController.cs" />
      <Compile Include="Assets\Scripts\Controller\GameObjectController\GameObjectControllerStorage.cs" />
+     <Compile Include="Assets\Scripts\Controller\GameObjectController\GameObjectControllers.cs" />
      <Compile Include="Assets\Scripts\Controller\GameObjectController\UpdateViewStrategy\IUpdateViewStrategy.cs" />
      <Compile Include="Assets\Scripts\Controller\GameObjectController\UpdateViewStrategy\UpdateViewStrategyMutable.cs" />
      <Compile Include="Assets\Scripts\Controller\GameObjectController\UpdateViewStrategy\UpdateViewStrategyTransform.cs" />
@@ -84,9 +85,11 @@
      <Compile Include="Assets\Scripts\Convert\Converter.cs" />
      <Compile Include="Assets\Scripts\Convert\KmkVector3Extension.cs" />
      <Compile Include="Assets\Scripts\Convert\UnityVector3Extension.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Input\PlayerInputController.cs" />
      <Compile Include="Assets\Scripts\Input\SystemInput.cs" />
+     <Compile Include="Assets\Scripts\Manager\AsteroidsGame.cs" />
+     <Compile Include="Assets\Scripts\Manager\AsteroidsGameStarter.cs" />
+     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\Model\Builder\AsteroidComponentsStorageBuilder.cs" />
      <Compile Include="Assets\Scripts\Model\Builder\BulletComponentsStorageBuilder.cs" />
      <Compile Include="Assets\Scripts\Model\Builder\PlayerComponentsStorageBuilder.cs" />
@@ -102,13 +105,17 @@
      <Compile Include="Assets\Scripts\Model\Director\UfoComponentsStorageDirector.cs" />
      <Compile Include="Assets\Scripts\Model\Factory\AsteroidsComponentsStorageFactory.cs" />
      <Compile Include="Assets\Scripts\Model\Factory\IAsteroidsComponentsStorageFactory.cs" />
-     <Compile Include="Assets\Scripts\Spawner\AsteroidsSpawner.cs" />
+     <Compile Include="Assets\Scripts\Other\IAmountObjectsOnField.cs" />
+     <Compile Include="Assets\Scripts\Other\RandomTransform.cs" />
+     <Compile Include="Assets\Scripts\Settings\AudioSettings.cs" />
+     <Compile Include="Assets\Scripts\Settings\AudioSettingsParameters.cs" />
+     <Compile Include="Assets\Scripts\Settings\PauseSettings.cs" />
      <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\AsteroidChildrenSpawner.cs" />
-     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\AsteroidChildrenSpawnerHelper.cs" />
-     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\CannonChildrenSpawnerHelper.cs" />
-     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\ChildrenSpawnerHelper.cs" />
-     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\IAsteroidChildrenSpawner.cs" />
-     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\LaserChildrenSpawnerHelper.cs" />
+     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\CannonChildrenSpawner.cs" />
+     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\ChildrenSpawner.cs" />
+     <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\LaserChildrenSpawner.cs" />
+     <Compile Include="Assets\Scripts\Spawner\GameObjectControllerCreator.cs" />
+     <Compile Include="Assets\Scripts\Spawner\GameObjectSpawner.cs" />
      <Compile Include="Assets\Scripts\Spawner\IAsteroidsSpawner.cs" />
      <Compile Include="Assets\Scripts\Update\IUpdater.cs" />
      <Compile Include="Assets\Scripts\Update\UpdateObserverCreator.cs" />

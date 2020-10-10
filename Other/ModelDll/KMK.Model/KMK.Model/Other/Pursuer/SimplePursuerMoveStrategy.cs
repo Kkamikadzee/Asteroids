@@ -11,7 +11,6 @@ namespace KMK.Model.Other.Pursuer
         private IDirectionMover _directionMover;
         private IAccelerationController _accelerationController;
         
-        public event Action<SimplePursuerMoveStrategy> Destruction;
         public event Action DisconnectFromObserver;
 
         public SimplePursuerMoveStrategy(IComponentsStorage parent,
@@ -40,7 +39,6 @@ namespace KMK.Model.Other.Pursuer
             base.Destroy();
             
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

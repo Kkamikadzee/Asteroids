@@ -8,9 +8,9 @@ namespace Model.Director
     public class UfoComponentsStorageDirector
     {
         private Rectangle _rectangle;
-        private AsteroidsPlayerTransform _playerTransform;
+        private GetterPlayerTransform _playerTransform;
 
-        public UfoComponentsStorageDirector(Rectangle rectangle, AsteroidsPlayerTransform playerTransform)
+        public UfoComponentsStorageDirector(Rectangle rectangle, GetterPlayerTransform playerTransform)
         {
             _rectangle = rectangle;
             _playerTransform = playerTransform;

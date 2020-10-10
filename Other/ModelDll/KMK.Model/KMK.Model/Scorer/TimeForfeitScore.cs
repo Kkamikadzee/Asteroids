@@ -21,7 +21,7 @@ namespace KMK.Model.Scorer
             set => _forfeitScoreInSecond = value;
         }
 
-        public event Action DisconnectFromObserver; // TODO: Сомнительная нужда в этой событие у этого класса
+        public event Action DisconnectFromObserver;
 
         public TimeForfeitScore(IScorer scorer, float forfeitScoreInSecon)
         {
@@ -31,6 +31,14 @@ namespace KMK.Model.Scorer
         
         public void Update(float deltaTime)
         {
+            if (_scorer.CurrentScore == 0)
+            {
+                return;
+            }
+            if (_scorer.CurrentScore + _forfeitScoreInSecond * deltaTime < 0)
+            {
+                _scorer.AddScore(_scorer.CurrentScore);
+            }
             _scorer.AddScore(_forfeitScoreInSecond * deltaTime);
         }
     }

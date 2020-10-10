@@ -11,7 +11,6 @@ namespace KMK.Model.Move
         private float _acceleration;
         private float _drag;
 
-        public event Action<MotionController> Destruction;
         public event Action DisconnectFromObserver;
 
         public MotionController(IComponentsStorage parent,
@@ -82,7 +81,6 @@ namespace KMK.Model.Move
             base.Destroy();
 
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

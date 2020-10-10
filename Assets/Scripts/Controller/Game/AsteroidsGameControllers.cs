@@ -9,31 +9,31 @@ namespace Controller.Game
     public class AsteroidsGameControllers
     {
         private AsteroidsUiControllersStorage _uiControllersStorage;
-        private AsteroidsControllers _controllers;
+        private GameObjectControllers _controllers;
         private PlayerInputController _playerInputController;
         private AsteroidChildrenSpawner _childrenSpawner;
         private AsteroidsLevelController _levelController;
-        private AsteroidsPlayerTransform _playerTransform;
+        private GetterPlayerTransform _playerTransform;
         private CollisionChecker _collisionChecker;
         private HealthDieController _healthDieController;
         private HealthScoreController _healthScoreController;
         private ViewChanger _viewChanger;
 
         public AsteroidsUiControllersStorage UiControllersStorage => _uiControllersStorage;
-        public AsteroidsControllers Controllers => _controllers;
+        public GameObjectControllers Controllers => _controllers;
         public PlayerInputController PlayerInputController => _playerInputController;
         public AsteroidChildrenSpawner ChildrenSpawner => _childrenSpawner;
         public AsteroidsLevelController LevelController => _levelController;
-        public AsteroidsPlayerTransform PlayerTransform => _playerTransform;
+        public GetterPlayerTransform PlayerTransform => _playerTransform;
         public CollisionChecker CollisionChecker => _collisionChecker;
         public HealthDieController HealthDieController => _healthDieController;
         public HealthScoreController HealthScoreController => _healthScoreController;
         public ViewChanger ViewChanger => _viewChanger;
 
         public AsteroidsGameControllers(AsteroidsUiControllersStorage uiControllersStorage,
-            AsteroidsControllers controllers, PlayerInputController playerInputController,
+            GameObjectControllers controllers, PlayerInputController playerInputController,
             AsteroidChildrenSpawner childrenSpawner, AsteroidsLevelController levelController,
-            AsteroidsPlayerTransform playerTransform, CollisionChecker collisionChecker,
+            GetterPlayerTransform playerTransform, CollisionChecker collisionChecker,
             HealthDieController healthDieController, HealthScoreController healthScoreController,
             ViewChanger viewChanger)
         {

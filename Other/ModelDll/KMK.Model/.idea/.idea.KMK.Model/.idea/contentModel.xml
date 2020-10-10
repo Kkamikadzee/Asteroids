@@ -14,7 +14,6 @@
           <e p="Component.cs" t="Include" />
           <e p="ComponentsStorage.cs" t="Include" />
           <e p="IComponentsStorage.cs" t="Include" />
-          <e p="IDestroyable.cs" t="Include" />
           <e p="IMovable.cs" t="Include" />
           <e p="IRotatable.cs" t="Include" />
           <e p="IScalable.cs" t="Include" />
@@ -33,6 +32,11 @@
           <e p="ICollisionChecker.cs" t="Include" />
           <e p="SimpleCollision.cs" t="Include" />
           <e p="SphereCollider.cs" t="Include" />
+        </e>
+        <e p="Destroyer" t="Include">
+          <e p="IDestroyable.cs" t="Include" />
+          <e p="IDestroyer.cs" t="Include" />
+          <e p="UpdatableDestroyer.cs" t="Include" />
         </e>
         <e p="KMK.Model.csproj" t="IncludeRecursive" />
         <e p="Move" t="Include">

@@ -49,7 +49,7 @@ namespace View.UI.ImageUi
                     }
                     else
                     {
-                        _displayedResourceList[(_currentDisplayedAmountResource - 1)].SetActive(true);
+                        _displayedResourceList[(_currentDisplayedAmountResource)].SetActive(true);
                     }
                     _currentDisplayedAmountResource++;
                 }

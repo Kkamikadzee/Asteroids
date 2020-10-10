@@ -1,5 +1,6 @@
 ﻿using KMK.Model.Base;
 using KMK.Model.Collision;
+using KMK.Model.Destroyer;
 using KMK.Model.Move;
 using KMK.Model.Weapon;
 using UnityEngine;
@@ -13,13 +14,15 @@ namespace Model.Builder
     public class BulletComponentsStorageBuilder: KMK.Model.Builder.ComponentsStorageBuilder
     {
         private IUpdater _updater;
+        private IDestroyer _destroyer;
         private ICollisionChecker _collisionChecker;
 
         private IComponentsStorage _componentsStorage;
         
-        public BulletComponentsStorageBuilder(IUpdater updater, ICollisionChecker collisionChecker)
+        public BulletComponentsStorageBuilder(IUpdater updater, IDestroyer destroyer, ICollisionChecker collisionChecker)
         {
             _updater = updater;
+            _destroyer = destroyer;
             _collisionChecker = collisionChecker;
         }
         
@@ -33,6 +36,8 @@ namespace Model.Builder
             base.BuildComponentsStorage(transform);
             
             _componentsStorage = new ComponentsStorage(transform);
+            
+            _componentsStorage.PreparingForDestruction += _destroyer.AddDestroyableObject;
         }
 
         public override void BuildSphereCollider(float radius, Vector3 centerPosition, ColliderTag tag, bool isTrigger,
@@ -48,7 +53,7 @@ namespace Model.Builder
 
             if (ifCollisionDestroyer)
             {
-                collider.Collision += _componentsStorage.Destroy;
+                collider.Collision += _componentsStorage.PrepareForDestroy;
             }
         }
 
@@ -76,7 +81,7 @@ namespace Model.Builder
             _updater.OtherUpdateObservable.AddUpdaterObserver(UpdateObserverCreator.GetObserver
                 (component, _updater.OtherUpdateObservable));
             
-            component.TimeOver += _componentsStorage.Destroy;
+            component.TimeOver += _componentsStorage.PrepareForDestroy;
         }
     }
 }

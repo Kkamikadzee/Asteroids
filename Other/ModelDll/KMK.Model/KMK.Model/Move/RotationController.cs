@@ -11,7 +11,6 @@ namespace KMK.Model.Move
         private float _angularAcceleration;
         private float _angularDrag;
 
-        public event Action<RotationController> Destruction;
         public event Action DisconnectFromObserver;
 
         public RotationController(IComponentsStorage parent,
@@ -82,7 +81,6 @@ namespace KMK.Model.Move
             base.Destroy();
 
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

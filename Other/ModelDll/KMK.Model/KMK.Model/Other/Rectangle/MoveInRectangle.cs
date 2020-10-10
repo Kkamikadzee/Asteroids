@@ -1,5 +1,6 @@
 ﻿using System;
 using KMK.Model.Base;
+using KMK.Model.Destroyer;
 using KMK.Model.Updater;
 
 namespace KMK.Model.Other.Rectangle
@@ -9,7 +10,6 @@ namespace KMK.Model.Other.Rectangle
         private IRectangle _boundary;
         private float _teleportDelta;
 
-        public event Action<MoveInRectangle> Destruction;
         public event Action DisconnectFromObserver;
 
         //На +teleportDelta объект смещается при перемещение на противоположную сторону
@@ -64,7 +64,6 @@ namespace KMK.Model.Other.Rectangle
             base.Destroy();
             
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

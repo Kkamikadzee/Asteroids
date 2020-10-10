@@ -1,24 +1,18 @@
 ﻿using System;
-using Controller.GameObjectController;
 using KMK.Model.Base;
 using KMK.Model.Other;
-using KMK.Model.Other.Pursuer;
-using KMK.Model.Scorer;
 using KMK.Model.Updater;
-using Model.Data;
 using Spawner;
-using View.GameObjectView;
 
 namespace Controller.Game
 {
     public class HealthDieController: IUpdatable
     {
-        private IAsteroidsSpawner _spawner;
-        private AsteroidsDataStorage _dataStorage;
+        private GameObjectSpawner _spawner;
         
-        private AsteroidsControllers _controllers;
         private Health _health;
-
+        private int _defaultHealth;
+        
         private bool _respawn;
         private float _respawnTime;
         private float _currentRespawnTime;
@@ -26,14 +20,14 @@ namespace Controller.Game
         public event Action DisconnectFromObserver;
         public event Action EndGame;
 
-        public HealthDieController(IAsteroidsSpawner spawner, AsteroidsDataStorage dataStorage, AsteroidsControllers controllers,
+        public HealthDieController(GameObjectSpawner spawner,
             Health health, float respawnTime)
         {
             _spawner = spawner;
-            _dataStorage = dataStorage;
-            
-            _controllers = controllers;
+
             _health = health;
+
+            _defaultHealth = _health.CurrentHealth;
 
             _respawn = true;
             _respawnTime = respawnTime;
@@ -50,14 +44,7 @@ namespace Controller.Game
                     _respawn = false;
                     _currentRespawnTime = 0;
                     
-                    Transform transform = new Transform(Vector3.Zero, Vector3.Zero);
-                    var tmp = _spawner.SpawnPlayer(transform, _dataStorage.Player);
-                    _controllers.PlayerController = tmp;
-
-                    foreach (var ufoController in _controllers.UfoControllers.Controllers)
-                    {
-                        ufoController.GameObjectModel.GetComponent<PursuerPointer>().Pursued = transform;
-                    }
+                    _spawner.SpawnPlayer();
                 }
             }
         }
@@ -68,12 +55,19 @@ namespace Controller.Game
             if (_health.CurrentHealth >= 0)
             {
                 _respawn = true;
-                _controllers.PlayerController = null;
             }
             else
             {
                 EndGame?.Invoke();
             }
+        }
+
+        public void Reset()
+        {
+            _health.AddHealth(_defaultHealth - _health.CurrentHealth);
+            
+            _respawn = true;
+            _currentRespawnTime = 0;
         }
     }
 }

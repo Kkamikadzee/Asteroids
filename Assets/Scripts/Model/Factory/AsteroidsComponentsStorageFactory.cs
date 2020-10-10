@@ -19,7 +19,7 @@ namespace Model.Factory
         private UfoComponentsStorageDirector _ufoDirector;
         private BulletComponentsStorageDirector _bulletDirector;
 
-        public AsteroidsComponentsStorageFactory(Rectangle boundary, AsteroidsPlayerTransform playerTransform,
+        public AsteroidsComponentsStorageFactory(Rectangle boundary, GetterPlayerTransform playerTransform,
             ComponentsStorageBuilder playerBuilder, ComponentsStorageBuilder asteroidBuilder,
             ComponentsStorageBuilder ufoBuilder, ComponentsStorageBuilder bulletBuilder)
         {

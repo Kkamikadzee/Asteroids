@@ -20,9 +20,9 @@ MonoBehaviour:
   _maxVelocity: 1
   _acceleration: 0.35
   _drag: 1
-  _maxAngularVelocity: 180
+  _maxAngularVelocity: 270
   _angularAcceleration: 180
-  _angularDrag: 360
+  _angularDrag: 3600
   _fireRateFirstWeapon: 180
   _fireRateSecondWeapon: 60
   _maxAmountAmmoSecondWeapon: 5

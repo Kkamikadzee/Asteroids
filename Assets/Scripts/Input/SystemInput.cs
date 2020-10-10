@@ -44,7 +44,7 @@ namespace Input
                 Laser?.Invoke();
             }
             
-            if (Math.Abs(UnityEngine.Input.GetAxis("ChangeView")) > 0.001f)
+            if (UnityEngine.Input.GetButtonDown("ChangeView"))
             {
                 ChangeView?.Invoke();
             }

@@ -4,6 +4,7 @@ using Input;
 using KMK.Model.Adapter;
 using KMK.Model.Base;
 using KMK.Model.Collision;
+using KMK.Model.Destroyer;
 using KMK.Model.Move;
 using KMK.Model.Other.Rectangle;
 using KMK.Model.Weapon;
@@ -19,11 +20,13 @@ namespace Model.Builder
     public class PlayerComponentsStorageBuilder: KMK.Model.Builder.ComponentsStorageBuilder
     {
         private IUpdater _updater;
+        private IDestroyer _destroyer;
+        
         private IAsteroidsUiControllersStoragePlayerInfo _uiControllers;
         private ICollisionChecker _collisionChecker;
         private HealthDieController _healthController;
-        private ChildrenSpawnerHelper _cannonChildrenSpawner;
-        private ChildrenSpawnerHelper _laserChildrenSpawner;
+        private ChildrenSpawner _cannonChildrenSpawner;
+        private ChildrenSpawner _laserChildrenSpawner;
         private PlayerInputController _playerInputController;
         
         private IComponentsStorage _componentsStorage;
@@ -35,13 +38,15 @@ namespace Model.Builder
         private Weapon _weapon1;
         private AutoAddLimitedAmmoWeapon _weapon2;
 
-        public PlayerComponentsStorageBuilder(IUpdater updater, 
+        public PlayerComponentsStorageBuilder(IUpdater updater, IDestroyer destroyer, 
             IAsteroidsUiControllersStoragePlayerInfo uiControllers,
             ICollisionChecker collisionChecker, HealthDieController healthController, 
-            ChildrenSpawnerHelper cannonChildrenSpawner, ChildrenSpawnerHelper laserChildrenSpawner,
+            ChildrenSpawner cannonChildrenSpawner, ChildrenSpawner laserChildrenSpawner,
             PlayerInputController playerInputController)
         {
             _updater = updater;
+            _destroyer = destroyer;
+            
             _uiControllers = uiControllers;
             _collisionChecker = collisionChecker;
             _healthController = healthController;
@@ -67,6 +72,8 @@ namespace Model.Builder
             base.BuildComponentsStorage(transform);
             
             _componentsStorage = new ComponentsStorage(transform);
+            
+            _componentsStorage.PreparingForDestruction += _destroyer.AddDestroyableObject;
         }
 
         public override void BuildSphereCollider(float radius, Vector3 centerPosition, ColliderTag tag, bool isTrigger,
@@ -82,7 +89,7 @@ namespace Model.Builder
 
             if (ifCollisionDestroyer)
             {
-                collider.Collision += _componentsStorage.Destroy;
+                collider.Collision += _componentsStorage.PrepareForDestroy;
             }
         }
 

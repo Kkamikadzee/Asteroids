@@ -10,7 +10,6 @@ namespace KMK.Model.Weapon
         private float _currentLifetime;
         
         public event Action<LimitedLifetime> TimeOver;
-        public event Action<LimitedLifetime> Destruction;
         public event Action DisconnectFromObserver;
 
         public LimitedLifetime(IComponentsStorage parent, float lifetime) : base(parent)
@@ -31,7 +30,6 @@ namespace KMK.Model.Weapon
         {
             base.Destroy();
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace KMK.Model.Base
+﻿using KMK.Model.Destroyer;
+
+namespace KMK.Model.Base
 {
     public abstract class Component : IDestroyable
     {

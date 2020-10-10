@@ -76,23 +76,21 @@ namespace Controller.GameObjectController
 
         private void _modelDestroyed(IComponentsStorage componentsStorageModel)
         {
-            _gameObjectView.Destroy();
+            _componentsStorageModel = null;
             Destroy();
         }
 
         public void Destroy()
         {
+            _componentsStorageModel?.Destroy();
+            
+            _gameObjectView?.Destroy();
+            
             _componentsStorageModel = null;
             _gameObjectView = null;
             _updateViewStrategies = null;
             
             Destruction?.Invoke(this);
-        }
-        
-        public void DestroyAll()
-        {
-            _gameObjectView.Destroy();
-            _modelDestroyed(_componentsStorageModel);
         }
     }
 }

@@ -8,6 +8,9 @@ namespace Update
         private UpdaterObservable _movementObservable;
         private UpdaterObservable _collisionObservable;
         private UpdaterObservable _otherFixedUpdateObservable;
+        private UpdaterObservable _modelDestroyerObservable;
+        
+        
         private UpdaterObservable _viewObservable;
         private UpdaterObservable _otherUpdateObservable;
 
@@ -16,6 +19,8 @@ namespace Update
         public UpdaterObservable MovementObservable => _movementObservable;
         public UpdaterObservable CollisionObservable => _collisionObservable;
         public UpdaterObservable OtherFixedUpdateObservable => _otherFixedUpdateObservable;
+        public UpdaterObservable ModelDestroyerObservable => _modelDestroyerObservable;
+        
         public UpdaterObservable ViewObservable => _viewObservable;
         public UpdaterObservable OtherUpdateObservable => _otherUpdateObservable;
 
@@ -27,6 +32,7 @@ namespace Update
             _movementObservable = new UpdaterObservable();
             _collisionObservable = new UpdaterObservable();
             _otherFixedUpdateObservable = new UpdaterObservable();
+            _modelDestroyerObservable = new UpdaterObservable();
             
             _viewObservable = new UpdaterObservable();
             _otherUpdateObservable = new UpdaterObservable();
@@ -39,7 +45,9 @@ namespace Update
             if (_active)
             {
                 _movementObservable.NotifyObservers(Time.fixedDeltaTime);
+                _collisionObservable.NotifyObservers(Time.deltaTime);
                 _otherFixedUpdateObservable.NotifyObservers(Time.fixedDeltaTime);
+                _modelDestroyerObservable.NotifyObservers(Time.fixedDeltaTime);
             }
         }
         
@@ -47,7 +55,6 @@ namespace Update
         {
             if (_active)
             {
-                _collisionObservable.NotifyObservers(Time.fixedDeltaTime);
                 _viewObservable.NotifyObservers(Time.deltaTime);
                 _otherUpdateObservable.NotifyObservers(Time.deltaTime);
             }

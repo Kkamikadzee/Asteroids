@@ -10,15 +10,15 @@
         {
             _currentHealth = currentHealth;
         }
-        
-        public void AddHealth()
+
+        public void AddHealth(int value = 1)
         {
-            _currentHealth++;
+            _currentHealth += value;
         }
 
-        public void SubHealth()
+        public void SubHealth(int value = 1)
         {
-            _currentHealth--;
+            _currentHealth -= value;
         }
     }
 }

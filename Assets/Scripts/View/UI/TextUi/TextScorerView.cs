@@ -21,7 +21,7 @@ namespace View.UI.TextUi
         public override void SetScore(float score)
         {
             _displayedScore = score;
-            _scoreText.text = _displayedScore.ToString();
+            _scoreText.text = Mathf.RoundToInt(_displayedScore).ToString();
         }
         
         public override void Update(float deltaTime)

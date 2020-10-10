@@ -15,7 +15,6 @@ namespace KMK.Model.Other.Pursuer
             set => _pursued = value;
         }
 
-        public event Action<PursuerPointer> Destruction;
         public event Action DisconnectFromObserver;
 
         public PursuerPointer(IComponentsStorage parent,
@@ -42,7 +41,6 @@ namespace KMK.Model.Other.Pursuer
             base.Destroy();
             
             DisconnectFromObserver?.Invoke();
-            Destruction?.Invoke(this);
         }
     }
 }

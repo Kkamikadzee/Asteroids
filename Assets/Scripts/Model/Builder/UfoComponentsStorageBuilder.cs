@@ -1,5 +1,6 @@
 ﻿using KMK.Model.Base;
 using KMK.Model.Collision;
+using KMK.Model.Destroyer;
 using KMK.Model.Move;
 using KMK.Model.Other.Pursuer;
 using KMK.Model.Other.Rectangle;
@@ -15,6 +16,7 @@ namespace Model.Builder
     public class UfoComponentsStorageBuilder: KMK.Model.Builder.ComponentsStorageBuilder
     {
         private IUpdater _updater;
+        private IDestroyer _destroyer;
         private ICollisionChecker _collisionChecker;
         private IScorer _score;
 
@@ -23,10 +25,11 @@ namespace Model.Builder
         private Mover _mover;
         private MotionController _motionController;
 
-        public UfoComponentsStorageBuilder(IUpdater updater, ICollisionChecker collisionChecker,
+        public UfoComponentsStorageBuilder(IUpdater updater, IDestroyer destroyer, ICollisionChecker collisionChecker,
             IScorer score)
         {
             _updater = updater;
+            _destroyer = destroyer;
             _collisionChecker = collisionChecker;
             _score = score;
         }
@@ -41,6 +44,8 @@ namespace Model.Builder
             base.BuildComponentsStorage(transform);
             
             _componentsStorage = new ComponentsStorage(transform);
+            
+            _componentsStorage.PreparingForDestruction += _destroyer.AddDestroyableObject;
         }
 
         public override void BuildSphereCollider(float radius, Vector3 centerPosition, ColliderTag tag, bool isTrigger,
@@ -56,7 +61,7 @@ namespace Model.Builder
 
             if (ifCollisionDestroyer)
             {
-                collider.Collision += _componentsStorage.Destroy;
+                collider.Collision += _componentsStorage.PrepareForDestroy;
             }
         }
 

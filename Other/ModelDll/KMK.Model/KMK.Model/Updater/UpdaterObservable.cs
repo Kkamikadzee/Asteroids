@@ -34,10 +34,14 @@ namespace KMK.Model.Updater
         }
 
         public void NotifyObservers(float deltaTime)
+            //Обновляется к цикле for, чтобы в процессе обновления коллекция могла меняться.
         {
-            foreach (var observer in _observers)
+            lock (_observers)
             {
-                observer.Update(deltaTime);
+                for(int i = 0; i < _observers.Count; i++)
+                {
+                    _observers[i].Update(deltaTime);
+                }
             }
         }
     }

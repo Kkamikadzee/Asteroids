@@ -33,5 +33,11 @@ namespace Controller.Game
             }
         }
 
+        public void Reset()
+        {
+            _scorer.AddScore(- _scorer.CurrentScore);
+            
+            _nextAmountScore = _oneHealthScore;
+        }
     }
 }
