@@ -4,7 +4,7 @@ using Model.Data;
 
 namespace Spawner
 {
-    public interface IAsteroidsSpawner
+    public interface IGameObjectControllerCreator
     {
         GameObjectController CreatePlayer(Transform transform, Model.Data.PlayerData playerData);
         GameObjectController CreateAsteroid(Transform transform, AsteroidData asteroidData);

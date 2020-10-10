@@ -20,130 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05e4003e-f229-4938-b067-488303f425cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Effects/EffectsSources.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Effects/EffectsSources.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Effects/ModelSoundEffectsBinder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Effects/ModelSoundEffectsBinder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Music.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Music/MusicSources.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/Music/MusicSources.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/IAmountObjectsOnField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/IAmountObjectsOnField.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/RandomTransform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/RandomTransform.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsParameters.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsParameters.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/PauseSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/PauseSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Destroyer/IDestroyer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Destroyer/UpdatableDestroyer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ObjectsData/LaserBullet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ObjectsData/LaserBullet.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ObjectsData/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ObjectsData/Player.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asteroid.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Asteroid.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CannonShell.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CannonShell.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LaserShell.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LaserShell.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Asteroid.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Asteroid.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Bullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Bullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Ufo.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PolygonPrefabs/Ufo.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UFO.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UFO.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerUI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AsteroidsGameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AsteroidsGameStarter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGame.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGame.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGameControllers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGameControllers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsLevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsLevelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsPlayerTransform.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsPlayerTransform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthDieController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthDieController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthScoreController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthScoreController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/ViewChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/ViewChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/AsteroidsControllers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/AsteroidsControllers.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllers.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllerStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllerStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/SystemInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/SystemInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/AsteroidComponentsStorageBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/AsteroidComponentsStorageBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/BulletComponentsStorageBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/BulletComponentsStorageBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/PlayerComponentsStorageBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/PlayerComponentsStorageBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/UfoComponentsStorageBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Builder/UfoComponentsStorageBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Director/UfoComponentsStorageDirector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Director/UfoComponentsStorageDirector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Factory/AsteroidsComponentsStorageFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Factory/AsteroidsComponentsStorageFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/KMK.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/KMK.Model.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/AsteroidsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/AsteroidsSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawnerHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawnerHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/CannonChildrenSpawnerHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/CannonChildrenSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/CannonChildrenSpawnerHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/CannonChildrenSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/ChildrenSpawnerHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/ChildrenSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/ChildrenSpawnerHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/ChildrenSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/IAsteroidChildrenSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/IAsteroidChildrenSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/LaserChildrenSpawnerHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/LaserChildrenSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/LaserChildrenSpawnerHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/LaserChildrenSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/IGameObjectControllerCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner/IGameObjectControllerCreator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameObjectView/GameObjectView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameObjectView/GameObjectView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/UI/TextUi/TextScorerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/UI/TextUi/TextScorerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteSheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SpriteSheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UIReloadLaser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UIReloadLaser.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/.idea/.idea.KMK.Model/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/.idea/.idea.KMK.Model/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/Component.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/Component.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/ComponentsStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/ComponentsStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/IComponentsStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/IComponentsStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Base/IDestroyable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Destroyer/IDestroyable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Collision/CollisionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Collision/CollisionChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Move/MotionContrioller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Move/MotionContrioller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Move/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Move/Mover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Move/RotationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Move/RotationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Pursuer/PursuerPointer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Pursuer/PursuerPointer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Pursuer/SimplePursuerMoveStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Pursuer/SimplePursuerMoveStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/BouncingInRectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/BouncingInRectangle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/MoveInRectangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/MoveInRectangle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Scorer/TimeForfeitScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Scorer/TimeForfeitScore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Updater/UpdaterObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Updater/UpdaterObservable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Weapon/LimitedLifetime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Weapon/LimitedLifetime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Weapon/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Weapon/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/obj/Release/netstandard2.0/KMK.Model.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/obj/Release/netstandard2.0/KMK.Model.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/obj/Release/netstandard2.0/KMK.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/obj/Release/netstandard2.0/KMK.Model.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +189,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/UI/Factory/SimpleAsteroidsUiViewFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/283B7D55-1C6B-49E5-9BAF-6ADC8D930C4C/22/0777bfd9/TimeForfeitScore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/GameObjectView/ViewState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner/IAsteroidsSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner/IGameObjectControllerCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/UI/LimitedResourceController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/UpdateViewStrategy/UpdateViewStrategyTransform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/GameObjectView/CreatorFactory/IGameObjectVeiwCreatorFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -328,13 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Director/BulletComponentsStorageDirector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameObjectView/GameObjectView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Builder/AsteroidComponentsStorageBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Builder/BulletComponentsStorageBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Builder/UfoComponentsStorageBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Builder/PlayerComponentsStorageBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/ViewChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/MusicSources.cs" />
@@ -354,7 +238,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Other/IAmountObjectsOnField.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectControllerCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/Effects/ModelSoundEffectsBinder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/IAsteroidChildrenSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/CannonChildrenSpawnerHelper.cs" />
@@ -366,19 +249,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsParameters.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsInitializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/PauseAudioSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/PauseSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsLevelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AsteroidsGameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthDieController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthScoreController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllerStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UI/ScorerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UI/IUiViewController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings/PauseSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/GameObjectView/Creator/GameObjectViewCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/IGameObjectControllerCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/GameObjectSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGameControllers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -442,7 +333,7 @@
       <workItem from="1601880303193" duration="22843000" />
       <workItem from="1601992496839" duration="2429000" />
       <workItem from="1602314998681" duration="379000" />
-      <workItem from="1602315420740" duration="9051000" />
+      <workItem from="1602315420740" duration="18213000" />
     </task>
     <servers />
   </component>
@@ -577,10 +468,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="908" y="257" width="737" height="606" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1601994345930" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1600354284716">
+    <state x="616" y="250" key="run.anything.popup" timestamp="1602336088001">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1600354284716" />
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602336088001" />
     <state x="939" y="274" width="672" height="678" key="search.everywhere.popup" timestamp="1601896884688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

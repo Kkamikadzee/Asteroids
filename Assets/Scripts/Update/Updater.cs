@@ -10,7 +10,6 @@ namespace Update
         private UpdaterObservable _otherFixedUpdateObservable;
         private UpdaterObservable _modelDestroyerObservable;
         
-        
         private UpdaterObservable _viewObservable;
         private UpdaterObservable _otherUpdateObservable;
 

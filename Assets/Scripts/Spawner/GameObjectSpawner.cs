@@ -13,7 +13,7 @@ namespace Spawner
 {
     public class GameObjectSpawner
     {
-         private GameObjectControllerCreator _controllerCreator;
+         private IGameObjectControllerCreator _controllerCreator;
          private AsteroidsDataStorage _dataStorage;
          private GameObjectControllers _controllers;
 
@@ -22,7 +22,7 @@ namespace Spawner
 
          private ModelSoundEffectsBinder _soundEffectsBinder;
          
-         public GameObjectSpawner(GameObjectControllerCreator controllerCreator,
+         public GameObjectSpawner(IGameObjectControllerCreator controllerCreator,
              AsteroidsDataStorage dataStorage, GameObjectControllers controllers, Rectangle rectangle,
              ModelSoundEffectsBinder soundEffectsBinder)
          {

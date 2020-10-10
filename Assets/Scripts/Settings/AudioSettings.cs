@@ -2,6 +2,7 @@
 using Audio.Music;
 using UnityEngine;
 using UnityEngine.Audio;
+using Update;
 
 namespace Settings
 {

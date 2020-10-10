@@ -106,7 +106,7 @@
             </e>
             <e p="GameObjectControllerCreator.cs" t="Include" />
             <e p="GameObjectSpawner.cs" t="Include" />
-            <e p="IAsteroidsSpawner.cs" t="Include" />
+            <e p="IGameObjectControllerCreator.cs" t="Include" />
           </e>
           <e p="Update" t="Include">
             <e p="IUpdater.cs" t="Include" />

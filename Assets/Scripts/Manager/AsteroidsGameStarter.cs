@@ -82,7 +82,6 @@ namespace Manager
     
         private AsteroidsLevelController _levelController;
     
-        private AsteroidChildrenSpawner _childrenSpawner;
         private AsteroidChildrenSpawner _asteroidChildrenSpawner;
         private CannonChildrenSpawner _cannonChildrenSpawner;
         private LaserChildrenSpawner _laserChildrenSpawner;
@@ -208,7 +207,7 @@ namespace Manager
             _controllerCreator.ModelFactory = _modelsFactory;
         }
 
-        public AsteroidsGame StartGame()
+        public AsteroidsGame Create()
         {
             CreateBorder();
         
@@ -222,7 +221,7 @@ namespace Manager
 
             var game = new AsteroidsGame(_updater, _controllerCreator, 
                 new AsteroidsGameControllers(_uiControllers, _controllers, _playerInputController,
-                    _childrenSpawner, _levelController, _playerTransform, _collisionChecker,
+                    _levelController, _playerTransform, _collisionChecker,
                     _healthDieController, _healthScoreController, _viewChanger),
                 _health, _scorer);
 

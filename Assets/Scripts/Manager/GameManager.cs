@@ -18,7 +18,7 @@ namespace Manager
         {
             _audioSettings.Initialize();
 
-            _game = _playerStarter.StartGame();
+            _game = _playerStarter.Create();
 
             _game.EndGame += _musicSources.Defeat.Play;
         

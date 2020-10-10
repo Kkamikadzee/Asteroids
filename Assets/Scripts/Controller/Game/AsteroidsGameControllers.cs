@@ -11,7 +11,6 @@ namespace Controller.Game
         private AsteroidsUiControllersStorage _uiControllersStorage;
         private GameObjectControllers _controllers;
         private PlayerInputController _playerInputController;
-        private AsteroidChildrenSpawner _childrenSpawner;
         private AsteroidsLevelController _levelController;
         private GetterPlayerTransform _playerTransform;
         private CollisionChecker _collisionChecker;
@@ -22,7 +21,6 @@ namespace Controller.Game
         public AsteroidsUiControllersStorage UiControllersStorage => _uiControllersStorage;
         public GameObjectControllers Controllers => _controllers;
         public PlayerInputController PlayerInputController => _playerInputController;
-        public AsteroidChildrenSpawner ChildrenSpawner => _childrenSpawner;
         public AsteroidsLevelController LevelController => _levelController;
         public GetterPlayerTransform PlayerTransform => _playerTransform;
         public CollisionChecker CollisionChecker => _collisionChecker;
@@ -32,7 +30,7 @@ namespace Controller.Game
 
         public AsteroidsGameControllers(AsteroidsUiControllersStorage uiControllersStorage,
             GameObjectControllers controllers, PlayerInputController playerInputController,
-            AsteroidChildrenSpawner childrenSpawner, AsteroidsLevelController levelController,
+            AsteroidsLevelController levelController,
             GetterPlayerTransform playerTransform, CollisionChecker collisionChecker,
             HealthDieController healthDieController, HealthScoreController healthScoreController,
             ViewChanger viewChanger)
@@ -40,7 +38,6 @@ namespace Controller.Game
             _uiControllersStorage = uiControllersStorage;
             _controllers = controllers;
             _playerInputController = playerInputController;
-            _childrenSpawner = childrenSpawner;
             _levelController = levelController;
             _playerTransform = playerTransform;
             _collisionChecker = collisionChecker;

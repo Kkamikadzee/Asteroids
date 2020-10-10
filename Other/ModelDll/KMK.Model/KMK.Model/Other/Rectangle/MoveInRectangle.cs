@@ -5,7 +5,7 @@ using KMK.Model.Updater;
 
 namespace KMK.Model.Other.Rectangle
 {
-    public class MoveInRectangle: Component, IUpdatable, IDestroyable
+    public class MoveInRectangle: Component, IUpdatable
     {
         private IRectangle _boundary;
         private float _teleportDelta;

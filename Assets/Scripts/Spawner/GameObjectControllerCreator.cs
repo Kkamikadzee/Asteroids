@@ -7,7 +7,7 @@ using Model.Factory;
 
 namespace Spawner
 {
-    public class GameObjectControllerCreator: IAsteroidsSpawner
+    public class GameObjectControllerCreator: IGameObjectControllerCreator
     {
         private IAsteroidsComponentsStorageFactory _modelFactory;
         private IAsteroidsGameObjectViewFactory _viewFactory;

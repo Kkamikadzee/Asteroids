@@ -116,7 +116,7 @@
      <Compile Include="Assets\Scripts\Spawner\ChildrenSpawner\LaserChildrenSpawner.cs" />
      <Compile Include="Assets\Scripts\Spawner\GameObjectControllerCreator.cs" />
      <Compile Include="Assets\Scripts\Spawner\GameObjectSpawner.cs" />
-     <Compile Include="Assets\Scripts\Spawner\IAsteroidsSpawner.cs" />
+     <Compile Include="Assets\Scripts\Spawner\IGameObjectControllerCreator.cs" />
      <Compile Include="Assets\Scripts\Update\IUpdater.cs" />
      <Compile Include="Assets\Scripts\Update\UpdateObserverCreator.cs" />
      <Compile Include="Assets\Scripts\Update\Updater.cs" />
