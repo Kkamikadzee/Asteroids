@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05e4003e-f229-4938-b067-488303f425cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other/Diagrams/StartGame/StartGame.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Diagrams/StartGame/StartGame.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +243,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllerStorage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UI/ScorerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UI/IUiViewController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" />
@@ -257,6 +255,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsGameControllers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" />
       </list>
     </option>
   </component>
@@ -320,7 +319,7 @@
       <workItem from="1601880303193" duration="22843000" />
       <workItem from="1601992496839" duration="2429000" />
       <workItem from="1602314998681" duration="379000" />
-      <workItem from="1602315420740" duration="20028000" />
+      <workItem from="1602315420740" duration="21044000" />
     </task>
     <servers />
   </component>
@@ -466,21 +465,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs</url>
-          <line>9</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" initialLine="9">
-            <startOffsets>
-              <option value="232" />
-            </startOffsets>
-            <endOffsets>
-              <option value="288" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="DotNet Exception Breakpoints" />
         <breakpoint type="DotNet Exception Breakpoints">
