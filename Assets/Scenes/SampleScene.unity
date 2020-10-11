@@ -424,7 +424,7 @@ MonoBehaviour:
   _oneHealthScore: 1000
   _startScore: 0
   _forfeitScoreInSecond: -1
-  _ufoSpawnProbability: 0.0005
+  _ufoSpawnProbability: 0.00025
   _camera: {fileID: 1860557281}
   _updater: {fileID: 178019065}
   _asteroidsUi: {fileID: 171136381}
