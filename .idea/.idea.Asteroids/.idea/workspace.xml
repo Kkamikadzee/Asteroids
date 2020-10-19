@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05e4003e-f229-4938-b067-488303f425cd" name="Default Changelist" comment="" />
+    <list default="true" id="05e4003e-f229-4938-b067-488303f425cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroids/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/KMK.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/KMK.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceLimitedFromAboveView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceLimitedFromAboveView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Updater/UpdaterObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Updater/UpdaterObserver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/obj/Release/netstandard2.0/KMK.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/obj/Release/netstandard2.0/KMK.Model.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,6 +118,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D75D6225-DCB2-48CC-A341-93220CDA06F2/55/1f773aa3/CollisionChecker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/240321B5-2005-4091-8A45-09725E189BB8/94/1b90d741/AutoAddLimitedAmmoWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/UI/IAsteroidsUiControllersStoragePlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2EC1D018-ADE2-419D-9C11-F13AC12BBAF3/c2/ce60e0a7/UpdaterObserver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/Game/ViewChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1BF70396-F718-45C9-803F-BBC9121077B9/9f/999c7e10/IfCollisionDestroyer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/UpdateViewStrategy/IUpdateViewStrategy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -139,6 +146,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BC57169F-845C-4198-95F1-28B4FFCCA35F/c3/21d933d1/ComponentsStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C9B5C617-739A-4D82-9021-15FCD3FFDA2D/62/0cf36708/RotationController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/748EE6BD-F1B4-43C9-819E-3E21547C83CC/4b/1809851e/ICollision.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Other/ModelDll/KMK.Model/KMK.Model/Other/Rectangle/BouncingInRectangle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/283B7D55-1C6B-49E5-9BAF-6ADC8D930C4C/8d/3c4a3a26/CollisionChecker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageProgressIndicatorView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/ModelSoundEffectsBinder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -203,9 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/ViewChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Audio/MusicSources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsParametrs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsParametrs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Audio/Music/MusicSources.cs" />
@@ -227,23 +232,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/CannonChildrenSpawnerHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/LaserChildrenSpawnerHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spawner/ChildrenSpawner/AsteroidChildrenSpawnerHelper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/TextUi/TextScorerView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsPlayerTransform.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/SystemInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsParameters.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettingsInitializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/PauseAudioSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsLevelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AsteroidsGameStarter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthDieController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthScoreController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/GameObjectController/GameObjectControllerStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UI/ScorerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/UI/IUiViewController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/AudioSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings/PauseSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Update/Updater.cs" />
@@ -254,6 +253,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/AsteroidsGameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/GetterPlayerTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/AsteroidsLevelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthDieController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller/Game/HealthScoreController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/SystemInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/UiElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/TextUi/TextScorerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageProgressIndicatorView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/View/UI/ImageUi/ImageLimitedResourceLimitedFromAboveView.cs" />
       </list>
     </option>
   </component>
@@ -318,7 +326,8 @@
       <workItem from="1601992496839" duration="2429000" />
       <workItem from="1602314998681" duration="379000" />
       <workItem from="1602315420740" duration="22510000" />
-      <workItem from="1602423943426" duration="1289000" />
+      <workItem from="1602423943426" duration="1657000" />
+      <workItem from="1603112213109" duration="1587000" />
     </task>
     <servers />
   </component>
@@ -441,18 +450,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="715" y="176" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1600520263981" />
-    <state x="918" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600345778415">
+    <state x="918" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603113669392">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="918" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1600345778415" />
+    <state x="918" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1603113669392" />
     <state x="820" y="296" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600951742310">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="820" y="296" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1600951742310" />
-    <state x="908" y="257" width="737" height="606" key="find.popup" timestamp="1601994345930">
+    <state x="711" y="268" width="737" height="606" key="find.popup" timestamp="1603113671333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="908" y="257" width="737" height="606" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1601994345930" />
+    <state x="711" y="268" width="737" height="606" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603113671333" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1602336088001">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

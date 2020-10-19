@@ -19,6 +19,7 @@
         public void DisconnectToUpdater()
         {
             _updater.RemoveUpdaterObserver(this);
+            _updatableObject.DisconnectFromObserver -= DisconnectToUpdater;
         }
 
         public void Update(float deltaTime)
